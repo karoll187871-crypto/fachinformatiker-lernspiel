@@ -1,0 +1,4814 @@
+[
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wie viele Bit hat eine IPv4-Adresse?",
+  "richtig": "32 Bit",
+  "falsch": [
+   "64 Bit",
+   "128 Bit",
+   "48 Bit"
+  ],
+  "erklaerung": "IPv4 = 4 Oktette à 8 Bit = 32 Bit."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wie viele Bit hat eine IPv6-Adresse?",
+  "richtig": "128 Bit",
+  "falsch": [
+   "32 Bit",
+   "64 Bit",
+   "256 Bit"
+  ],
+  "erklaerung": "IPv6 = 8 Blöcke à 16 Bit = 128 Bit."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wie viele Bit hat eine MAC-Adresse?",
+  "richtig": "48 Bit",
+  "falsch": [
+   "32 Bit",
+   "64 Bit",
+   "128 Bit"
+  ],
+  "erklaerung": "MAC = 6 Byte = 48 Bit, z.B. 00:1A:2B:3C:4D:5E."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welcher Dienst vergibt IP-Adressen automatisch?",
+  "richtig": "DHCP",
+  "falsch": [
+   "DNS",
+   "NTP",
+   "SMTP"
+  ],
+  "erklaerung": "DHCP vergibt IP, Subnetzmaske, Gateway und DNS-Server an Clients."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welcher Dienst löst Hostnamen in IP-Adressen auf?",
+  "richtig": "DNS",
+  "falsch": [
+   "DHCP",
+   "ARP",
+   "FTP"
+  ],
+  "erklaerung": "DNS (Domain Name System) übersetzt z.B. example.com in eine IP-Adresse."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Auf welcher OSI-Schicht arbeitet ein klassischer Switch?",
+  "richtig": "Schicht 2",
+  "falsch": [
+   "Schicht 1",
+   "Schicht 3",
+   "Schicht 4"
+  ],
+  "erklaerung": "Ein Switch leitet anhand von MAC-Adressen weiter = Sicherungsschicht (2)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Auf welcher OSI-Schicht arbeitet ein Router?",
+  "richtig": "Schicht 3",
+  "falsch": [
+   "Schicht 2",
+   "Schicht 4",
+   "Schicht 7"
+  ],
+  "erklaerung": "Router entscheiden anhand von IP-Adressen = Vermittlungsschicht (3)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wie viele nutzbare Hosts hat ein /24-Netz?",
+  "richtig": "254",
+  "falsch": [
+   "256",
+   "255",
+   "252"
+  ],
+  "erklaerung": "2^8 = 256 Adressen minus Netz- und Broadcastadresse = 254."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wie viele nutzbare Hosts hat ein /26-Netz?",
+  "richtig": "62",
+  "falsch": [
+   "64",
+   "30",
+   "126"
+  ],
+  "erklaerung": "32 − 26 = 6 Hostbits: 2^6 = 64 − 2 = 62."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welche Subnetzmaske gehört zu /27?",
+  "richtig": "255.255.255.224",
+  "falsch": [
+   "255.255.255.240",
+   "255.255.255.192",
+   "255.255.255.248"
+  ],
+  "erklaerung": "27 Bit gesetzt: letztes Oktett 11100000 = 224."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welche Adresse ist eine private IPv4-Adresse?",
+  "richtig": "192.168.10.5",
+  "falsch": [
+   "8.8.8.8",
+   "172.32.0.1",
+   "11.0.0.1"
+  ],
+  "erklaerung": "Privat: 10.0.0.0/8, 172.16.0.0/12 (bis 172.31.x.x), 192.168.0.0/16."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Was ist 127.0.0.1?",
+  "richtig": "Loopback (localhost)",
+  "falsch": [
+   "Standardgateway",
+   "Broadcastadresse",
+   "Öffentlicher DNS"
+  ],
+  "erklaerung": "127.0.0.1 zeigt immer auf den eigenen Rechner."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welches Protokoll ermittelt bei IPv4 die MAC zu einer IP?",
+  "richtig": "ARP",
+  "falsch": [
+   "DNS",
+   "ICMP",
+   "DHCP"
+  ],
+  "erklaerung": "ARP (Address Resolution Protocol) fragt per Broadcast nach der MAC."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welchen Standardport nutzt HTTPS?",
+  "richtig": "443",
+  "falsch": [
+   "80",
+   "22",
+   "21"
+  ],
+  "erklaerung": "HTTP = 80, HTTPS = 443, SSH = 22, FTP = 21."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welchen Standardport nutzt SSH?",
+  "richtig": "22",
+  "falsch": [
+   "23",
+   "21",
+   "25"
+  ],
+  "erklaerung": "SSH = 22. Telnet = 23 (unverschlüsselt), SMTP = 25."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welches Protokoll nutzt der Befehl ping?",
+  "richtig": "ICMP",
+  "falsch": [
+   "TCP",
+   "UDP",
+   "ARP"
+  ],
+  "erklaerung": "ping sendet ICMP Echo Request und erwartet Echo Reply."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welche Aussage zu TCP stimmt?",
+  "richtig": "TCP ist verbindungsorientiert",
+  "falsch": [
+   "TCP ist verbindungslos",
+   "TCP hat keine Bestätigungen",
+   "TCP ist immer schneller als UDP"
+  ],
+  "erklaerung": "TCP baut per 3-Wege-Handshake eine Verbindung auf und bestätigt Pakete."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Broadcastadresse von 192.168.1.0/24?",
+  "richtig": "192.168.1.255",
+  "falsch": [
+   "192.168.1.0",
+   "192.168.1.1",
+   "192.168.1.254"
+  ],
+  "erklaerung": "Alle Hostbits auf 1 = Broadcast: .255."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Alle Geräte hängen an einem zentralen Switch. Topologie?",
+  "richtig": "Stern",
+  "falsch": [
+   "Bus",
+   "Ring",
+   "Vollvermascht"
+  ],
+  "erklaerung": "Zentraler Knoten mit Einzelverbindungen = Sterntopologie."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welches Kabel schafft 10 Gbit/s über 100 m?",
+  "richtig": "Cat 6A",
+  "falsch": [
+   "Cat 5",
+   "Cat 5e",
+   "Cat 3"
+  ],
+  "erklaerung": "Cat 6A ist für 10GBASE-T bis 100 m spezifiziert."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welche WLAN-Verschlüsselung ist aktuell empfohlen?",
+  "richtig": "WPA3",
+  "falsch": [
+   "WEP",
+   "WPA",
+   "Offenes WLAN"
+  ],
+  "erklaerung": "WEP und WPA gelten als unsicher. WPA3 (oder mind. WPA2) verwenden."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Was bedeutet PoE?",
+  "richtig": "Strom über das LAN-Kabel",
+  "falsch": [
+   "Port-Überwachung",
+   "Paketverschlüsselung",
+   "Proxy über Ethernet"
+  ],
+  "erklaerung": "Power over Ethernet versorgt z.B. Access Points oder IP-Telefone mit Strom."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wie viele nutzbare Hosts hat ein /30-Netz?",
+  "richtig": "2",
+  "falsch": [
+   "4",
+   "6",
+   "0"
+  ],
+  "erklaerung": "2 Hostbits: 4 Adressen − 2 = 2. Typisch für Punkt-zu-Punkt-Links."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Welcher Speicher ist flüchtig?",
+  "richtig": "RAM",
+  "falsch": [
+   "SSD",
+   "HDD",
+   "ROM"
+  ],
+  "erklaerung": "RAM verliert ohne Strom seinen Inhalt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was ermöglicht die höchste SSD-Geschwindigkeit?",
+  "richtig": "NVMe über PCIe",
+  "falsch": [
+   "SATA II",
+   "USB 2.0",
+   "IDE"
+  ],
+  "erklaerung": "NVMe nutzt PCIe-Lanes direkt und ist deutlich schneller als SATA."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Wofür steht USV?",
+  "richtig": "Unterbrechungsfreie Stromversorgung",
+  "falsch": [
+   "Universelle Speicherverwaltung",
+   "Unicode-Systemversion",
+   "USB-Spannungsverteiler"
+  ],
+  "erklaerung": "Eine USV überbrückt Stromausfälle und schützt vor Spannungsspitzen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was macht RAID 1?",
+  "richtig": "Spiegelung",
+  "falsch": [
+   "Striping ohne Redundanz",
+   "Verteilte Parität",
+   "Doppelte Parität"
+  ],
+  "erklaerung": "RAID 1 schreibt identische Daten auf zwei Platten (Mirroring)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was macht RAID 0?",
+  "richtig": "Striping ohne Redundanz",
+  "falsch": [
+   "Spiegelung",
+   "Verteilte Parität",
+   "Backup in die Cloud"
+  ],
+  "erklaerung": "RAID 0 ist schnell, aber fällt eine Platte aus, sind alle Daten weg."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Wie viele Platten braucht RAID 5 mindestens?",
+  "richtig": "3",
+  "falsch": [
+   "2",
+   "4",
+   "5"
+  ],
+  "erklaerung": "RAID 5 = Striping mit verteilter Parität, mindestens 3 Platten."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "RAID 5 mit 4 × 2 TB. Nutzbare Kapazität?",
+  "richtig": "6 TB",
+  "falsch": [
+   "8 TB",
+   "4 TB",
+   "2 TB"
+  ],
+  "erklaerung": "RAID 5: (n − 1) × Plattengröße = 3 × 2 TB = 6 TB."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was ist UEFI?",
+  "richtig": "Firmware zum Starten des PCs",
+  "falsch": [
+   "Ein Betriebssystem",
+   "Ein Druckertreiber",
+   "Ein Virenscanner"
+  ],
+  "erklaerung": "UEFI (Nachfolger des BIOS) initialisiert Hardware und startet den Bootloader."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was gibt die TDP einer CPU an?",
+  "richtig": "Thermische Verlustleistung",
+  "falsch": [
+   "Taktfrequenz",
+   "Anzahl der Kerne",
+   "Cachegröße"
+  ],
+  "erklaerung": "TDP (Thermal Design Power) bestimmt die nötige Kühlleistung in Watt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Welche Auflösung hat Full HD?",
+  "richtig": "1920 × 1080",
+  "falsch": [
+   "1280 × 720",
+   "2560 × 1440",
+   "3840 × 2160"
+  ],
+  "erklaerung": "Full HD = 1920 × 1080. 4K UHD = 3840 × 2160."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was gibt dpi an?",
+  "richtig": "Punkte pro Zoll",
+  "falsch": [
+   "Daten pro Intervall",
+   "Bilder pro Sekunde",
+   "Farbtiefe in Bit"
+  ],
+  "erklaerung": "dots per inch: Auflösung von Druckern und Scannern."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "1 KiB entspricht …",
+  "richtig": "1024 Byte",
+  "falsch": [
+   "1000 Byte",
+   "1024 Bit",
+   "1000 Bit"
+  ],
+  "erklaerung": "Binärpräfix: Ki = 2^10 = 1024. kB (dezimal) = 1000 Byte."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Binär 1010 ist dezimal …",
+  "richtig": "10",
+  "falsch": [
+   "12",
+   "8",
+   "5"
+  ],
+  "erklaerung": "8 + 0 + 2 + 0 = 10."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Hexadezimal FF ist dezimal …",
+  "richtig": "255",
+  "falsch": [
+   "256",
+   "15",
+   "240"
+  ],
+  "erklaerung": "F = 15: 15 × 16 + 15 = 255."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Dezimal 13 ist binär …",
+  "richtig": "1101",
+  "falsch": [
+   "1011",
+   "1110",
+   "1001"
+  ],
+  "erklaerung": "8 + 4 + 0 + 1 = 13 → 1101."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Hexadezimal 1A ist dezimal …",
+  "richtig": "26",
+  "falsch": [
+   "16",
+   "21",
+   "10"
+  ],
+  "erklaerung": "1 × 16 + 10 = 26."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "500 MB über 100 Mbit/s. Dauer (theoretisch)?",
+  "richtig": "40 Sekunden",
+  "falsch": [
+   "5 Sekunden",
+   "4 Sekunden",
+   "50 Sekunden"
+  ],
+  "erklaerung": "500 MB × 8 = 4000 Mbit. 4000 / 100 = 40 s."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Bild 1920 × 1080, 24 Bit Farbtiefe, unkomprimiert?",
+  "richtig": "ca. 6,2 MB",
+  "falsch": [
+   "ca. 2,1 MB",
+   "ca. 49,8 MB",
+   "ca. 0,8 MB"
+  ],
+  "erklaerung": "1920 × 1080 × 3 Byte = 6.220.800 Byte ≈ 6,2 MB."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was sind die drei klassischen Schutzziele?",
+  "richtig": "Vertraulichkeit, Integrität, Verfügbarkeit",
+  "falsch": [
+   "Geschwindigkeit, Preis, Qualität",
+   "Backup, Firewall, Virenschutz",
+   "Hardware, Software, Netzwerk"
+  ],
+  "erklaerung": "CIA-Triade: Confidentiality, Integrity, Availability."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Ein Hashwert dient vor allem zur Prüfung der …",
+  "richtig": "Integrität",
+  "falsch": [
+   "Verfügbarkeit",
+   "Vertraulichkeit",
+   "Geschwindigkeit"
+  ],
+  "erklaerung": "Ändert sich ein Bit, ändert sich der Hash. So erkennt man Manipulation."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was kennzeichnet symmetrische Verschlüsselung?",
+  "richtig": "Ein gemeinsamer Schlüssel",
+  "falsch": [
+   "Öffentlicher und privater Schlüssel",
+   "Gar kein Schlüssel",
+   "Nur Hashwerte"
+  ],
+  "erklaerung": "Sender und Empfänger nutzen denselben geheimen Schlüssel, z.B. AES."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Welches Verfahren ist symmetrisch?",
+  "richtig": "AES",
+  "falsch": [
+   "RSA",
+   "SHA-256",
+   "ECDSA"
+  ],
+  "erklaerung": "AES ist symmetrisch. RSA ist asymmetrisch, SHA-256 ist ein Hash."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Welches Verfahren ist asymmetrisch?",
+  "richtig": "RSA",
+  "falsch": [
+   "AES",
+   "DES",
+   "SHA-1"
+  ],
+  "erklaerung": "RSA nutzt ein Schlüsselpaar aus öffentlichem und privatem Schlüssel."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Womit erstellt man eine digitale Signatur?",
+  "richtig": "Privater Schlüssel des Absenders",
+  "falsch": [
+   "Öffentlicher Schlüssel des Empfängers",
+   "Privater Schlüssel des Empfängers",
+   "Gemeinsames Passwort"
+  ],
+  "erklaerung": "Signieren mit eigenem privaten Schlüssel, prüfen mit dem öffentlichen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Womit verschlüsselt man eine Mail an Anna (asymmetrisch)?",
+  "richtig": "Annas öffentlicher Schlüssel",
+  "falsch": [
+   "Annas privater Schlüssel",
+   "Mein öffentlicher Schlüssel",
+   "Mein privater Schlüssel"
+  ],
+  "erklaerung": "Nur Anna kann mit ihrem privaten Schlüssel wieder entschlüsseln."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was ist Zwei-Faktor-Authentifizierung?",
+  "richtig": "Zwei verschiedene Faktoren",
+  "falsch": [
+   "Zwei Passwörter",
+   "Passwort zweimal eingeben",
+   "Zwei Benutzerkonten"
+  ],
+  "erklaerung": "Kombination aus z.B. Wissen (Passwort) und Besitz (Handy/Token)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was macht Ransomware?",
+  "richtig": "Verschlüsselt Daten, fordert Lösegeld",
+  "falsch": [
+   "Zeigt nur Werbung an",
+   "Beschleunigt den PC",
+   "Sichert Daten in der Cloud"
+  ],
+  "erklaerung": "Erpressungstrojaner. Schutz: Backups, Updates, Awareness."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was ist Phishing?",
+  "richtig": "Täuschung zum Abgreifen von Daten",
+  "falsch": [
+   "Ein Hardwaredefekt",
+   "Ein Backup-Verfahren",
+   "Eine Netzwerktopologie"
+  ],
+  "erklaerung": "Gefälschte Mails/Seiten sollen Zugangsdaten entlocken."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was ist Social Engineering?",
+  "richtig": "Manipulation von Menschen",
+  "falsch": [
+   "Programmieren im Team",
+   "Soziale Netzwerke verwalten",
+   "Netzwerk-Lastverteilung"
+  ],
+  "erklaerung": "Angreifer nutzen Hilfsbereitschaft oder Autorität, um an Infos zu kommen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was besagt die 3-2-1-Backup-Regel?",
+  "richtig": "3 Kopien, 2 Medien, 1 extern",
+  "falsch": [
+   "3 Tage, 2 Wochen, 1 Monat",
+   "3 Server, 2 Switches, 1 Router",
+   "3 Voll-, 2 Teil-, 1 Inkrementell"
+  ],
+  "erklaerung": "3 Datenkopien auf 2 verschiedenen Medientypen, 1 davon außer Haus."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was sichert ein inkrementelles Backup?",
+  "richtig": "Änderungen seit letzter Sicherung",
+  "falsch": [
+   "Änderungen seit letzter Vollsicherung",
+   "Immer alle Daten",
+   "Nur Systemdateien"
+  ],
+  "erklaerung": "Inkrementell: seit letzter Sicherung jeder Art. Differentiell: seit letzter Vollsicherung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was sichert ein differentielles Backup?",
+  "richtig": "Änderungen seit letzter Vollsicherung",
+  "falsch": [
+   "Änderungen seit letzter Sicherung",
+   "Immer alle Daten",
+   "Nur gelöschte Dateien"
+  ],
+  "erklaerung": "Wiederherstellung braucht nur Vollsicherung + letzte differentielle."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Hauptaufgabe einer Firewall?",
+  "richtig": "Datenverkehr nach Regeln filtern",
+  "falsch": [
+   "Viren aus Dateien löschen",
+   "IP-Adressen vergeben",
+   "Daten komprimieren"
+  ],
+  "erklaerung": "Firewalls erlauben oder blockieren Verbindungen anhand von Regeln."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Schutzbedarfskategorien nach BSI?",
+  "richtig": "normal, hoch, sehr hoch",
+  "falsch": [
+   "niedrig, mittel, hoch",
+   "grün, gelb, rot",
+   "A, B, C"
+  ],
+  "erklaerung": "BSI IT-Grundschutz: normal, hoch, sehr hoch."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was ist ein VPN?",
+  "richtig": "Verschlüsselter Tunnel",
+  "falsch": [
+   "Ein schnelleres WLAN",
+   "Ein Virenscanner",
+   "Ein Dateiformat"
+  ],
+  "erklaerung": "Virtual Private Network: sichere Verbindung über ein unsicheres Netz."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Was schützt die DSGVO?",
+  "richtig": "Personenbezogene Daten",
+  "falsch": [
+   "Firmengeheimnisse",
+   "Urheberrechte",
+   "Hardware"
+  ],
+  "erklaerung": "DSGVO regelt die Verarbeitung personenbezogener Daten natürlicher Personen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Was ist ein personenbezogenes Datum?",
+  "richtig": "max.muster@firma.de",
+  "falsch": [
+   "Durchschnittstemperatur",
+   "Anzahl Mitarbeiter",
+   "Produktpreis"
+  ],
+  "erklaerung": "Eine namentliche E-Mail-Adresse lässt sich einer Person zuordnen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Was fordert der Grundsatz der Datenminimierung?",
+  "richtig": "Nur nötige Daten erheben",
+  "falsch": [
+   "Daten komprimieren",
+   "Daten nie löschen",
+   "Daten doppelt speichern"
+  ],
+  "erklaerung": "Art. 5 DSGVO: angemessen, erheblich, auf das Notwendige beschränkt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Ab wann braucht man i.d.R. einen Datenschutzbeauftragten?",
+  "richtig": "Ab 20 Personen",
+  "falsch": [
+   "Ab 5 Personen",
+   "Ab 50 Personen",
+   "Ab 250 Personen"
+  ],
+  "erklaerung": "§ 38 BDSG: in der Regel mind. 20 Personen ständig mit Datenverarbeitung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Externer Dienstleister verarbeitet Kundendaten. Was ist nötig?",
+  "richtig": "AV-Vertrag",
+  "falsch": [
+   "Arbeitsvertrag",
+   "Kaufvertrag",
+   "Mietvertrag"
+  ],
+  "erklaerung": "Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Wie kommt ein Kaufvertrag zustande?",
+  "richtig": "Antrag und Annahme",
+  "falsch": [
+   "Nur durch Unterschrift",
+   "Durch Lieferung",
+   "Durch Rechnung"
+  ],
+  "erklaerung": "Zwei übereinstimmende Willenserklärungen schließen den Vertrag."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Gesetzliche Gewährleistung bei Neuware (B2C)?",
+  "richtig": "2 Jahre",
+  "falsch": [
+   "6 Monate",
+   "1 Jahr",
+   "3 Jahre"
+  ],
+  "erklaerung": "Gewährleistung (Mängelhaftung) beträgt bei neuen Sachen 2 Jahre."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "1.000 € netto + 19 % USt. Bruttopreis?",
+  "richtig": "1.190 €",
+  "falsch": [
+   "1.019 €",
+   "1.900 €",
+   "810 €"
+  ],
+  "erklaerung": "1.000 € × 1,19 = 1.190 €."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "119 € brutto (19 % USt). Nettopreis?",
+  "richtig": "100 €",
+  "falsch": [
+   "96,39 €",
+   "99 €",
+   "119 €"
+  ],
+  "erklaerung": "119 € / 1,19 = 100 €. Nicht 19 % vom Brutto abziehen!"
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "500 €, 10 % Rabatt, dann 2 % Skonto. Zahlbetrag?",
+  "richtig": "441 €",
+  "falsch": [
+   "440 €",
+   "410 €",
+   "449 €"
+  ],
+  "erklaerung": "500 × 0,9 = 450. 450 × 0,98 = 441 €."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was ist Skonto?",
+  "richtig": "Nachlass bei schneller Zahlung",
+  "falsch": [
+   "Mengenrabatt",
+   "Mahngebühr",
+   "Versandkosten"
+  ],
+  "erklaerung": "Z.B. 2 % Skonto bei Zahlung innerhalb von 10 Tagen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Wozu dient eine Nutzwertanalyse?",
+  "richtig": "Alternativen gewichtet vergleichen",
+  "falsch": [
+   "Gewinn berechnen",
+   "Steuern ermitteln",
+   "Mitarbeiter bewerten"
+  ],
+  "erklaerung": "Kriterien gewichten, Punkte vergeben, gewichtete Summe vergleichen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "12.000 € Investition, 3.000 € Ersparnis pro Jahr. Amortisation?",
+  "richtig": "4 Jahre",
+  "falsch": [
+   "3 Jahre",
+   "6 Jahre",
+   "36 Jahre"
+  ],
+  "erklaerung": "12.000 € / 3.000 € pro Jahr = 4 Jahre."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Welche Kosten sind unabhängig von der Menge?",
+  "richtig": "Fixkosten",
+  "falsch": [
+   "Variable Kosten",
+   "Stückkosten",
+   "Materialkosten"
+  ],
+  "erklaerung": "Z.B. Miete oder Lizenzpauschale fallen unabhängig von der Menge an."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was beschreibt der Break-even-Point?",
+  "richtig": "Erlöse = Kosten",
+  "falsch": [
+   "Höchster Gewinn",
+   "Maximale Kapazität",
+   "Kosten = 0"
+  ],
+  "erklaerung": "Ab diesem Punkt (Gewinnschwelle) wird Gewinn erzielt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was bedeutet TCO?",
+  "richtig": "Gesamtkosten über Nutzungsdauer",
+  "falsch": [
+   "Nur Anschaffungspreis",
+   "Technische Prüfung",
+   "Kostenloser Support"
+  ],
+  "erklaerung": "Total Cost of Ownership: Anschaffung + Betrieb + Wartung + Entsorgung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was ist ein SLA?",
+  "richtig": "Vereinbarte Dienstgüte",
+  "falsch": [
+   "Software-Lizenz",
+   "Sicherheitslücke",
+   "Speicherart"
+  ],
+  "erklaerung": "Service Level Agreement: z.B. Verfügbarkeit 99,9 %, Reaktionszeit 4 h."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Bei welcher Rechtsform haften Gesellschafter nicht privat?",
+  "richtig": "GmbH",
+  "falsch": [
+   "OHG",
+   "GbR",
+   "Einzelunternehmen"
+  ],
+  "erklaerung": "GmbH haftet mit dem Gesellschaftsvermögen (Stammkapital mind. 25.000 €)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was gilt beim Leasing?",
+  "richtig": "Eigentum bleibt beim Leasinggeber",
+  "falsch": [
+   "Gerät gehört sofort mir",
+   "Keine monatlichen Kosten",
+   "Nur für Privatkunden"
+  ],
+  "erklaerung": "Man nutzt das Gut gegen Raten, Eigentümer bleibt der Leasinggeber."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Welche Lizenz hat ein Copyleft?",
+  "richtig": "GPL",
+  "falsch": [
+   "MIT",
+   "Apache 2.0",
+   "BSD"
+  ],
+  "erklaerung": "GPL: Abgeleitete Werke müssen ebenfalls unter GPL stehen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was kennzeichnet eine OEM-Lizenz?",
+  "richtig": "An Hardware gebunden",
+  "falsch": [
+   "Für beliebig viele PCs",
+   "Nur für Server",
+   "Immer kostenlos"
+  ],
+  "erklaerung": "OEM-Software wird mit einem Gerät verkauft und ist daran gebunden."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Was ist typisch für ein Projekt?",
+  "richtig": "Einmalig und zeitlich begrenzt",
+  "falsch": [
+   "Dauerhafte Routine",
+   "Ohne Ziel",
+   "Ohne Budget"
+  ],
+  "erklaerung": "DIN 69901: einmalig, Ziel, Zeit/Ressourcen begrenzt, eigene Organisation."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Wer erstellt das Lastenheft?",
+  "richtig": "Auftraggeber",
+  "falsch": [
+   "Auftragnehmer",
+   "Tester",
+   "Betriebsrat"
+  ],
+  "erklaerung": "Lastenheft = WAS der Kunde will. Pflichtenheft = WIE der Auftragnehmer es umsetzt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Wer erstellt das Pflichtenheft?",
+  "richtig": "Auftragnehmer",
+  "falsch": [
+   "Auftraggeber",
+   "Endnutzer",
+   "Datenschutzbeauftragter"
+  ],
+  "erklaerung": "Das Pflichtenheft beschreibt die Umsetzung der Anforderungen aus dem Lastenheft."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Was bildet das magische Dreieck?",
+  "richtig": "Zeit, Kosten, Qualität",
+  "falsch": [
+   "Team, Kunde, Chef",
+   "Plan, Do, Check",
+   "Hardware, Software, Netz"
+  ],
+  "erklaerung": "Ändert man eine Größe, beeinflusst das die anderen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Wofür steht das S in SMART?",
+  "richtig": "Spezifisch",
+  "falsch": [
+   "Schnell",
+   "Sicher",
+   "Sparsam"
+  ],
+  "erklaerung": "Spezifisch, Messbar, Attraktiv/Akzeptiert, Realistisch, Terminiert."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Was ist der kritische Pfad?",
+  "richtig": "Vorgänge ohne Puffer",
+  "falsch": [
+   "Die teuersten Vorgänge",
+   "Der erste Vorgang",
+   "Vorgänge mit viel Puffer"
+  ],
+  "erklaerung": "Verzögert sich ein Vorgang auf dem kritischen Pfad, verzögert sich das Projekt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Was zeigt ein Gantt-Diagramm?",
+  "richtig": "Vorgänge als Balken über Zeit",
+  "falsch": [
+   "Klassen und Attribute",
+   "Netzwerkgeräte",
+   "Datenbanktabellen"
+  ],
+  "erklaerung": "Balkenplan: Dauer, Reihenfolge und Abhängigkeiten auf einer Zeitachse."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Was ist ein Meilenstein?",
+  "richtig": "Wichtiges Ereignis ohne Dauer",
+  "falsch": [
+   "Längster Vorgang",
+   "Teuerster Vorgang",
+   "Ein Teammitglied"
+  ],
+  "erklaerung": "Meilensteine markieren Prüfpunkte, z.B. Abnahme des Konzepts."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Wann prüft eine kopfgesteuerte Schleife die Bedingung?",
+  "richtig": "Vor jedem Durchlauf",
+  "falsch": [
+   "Nach jedem Durchlauf",
+   "Nur einmal am Ende",
+   "Nie"
+  ],
+  "erklaerung": "while prüft vorher, kann also 0-mal laufen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Wie oft läuft eine fußgesteuerte Schleife mindestens?",
+  "richtig": "Einmal",
+  "falsch": [
+   "Keinmal",
+   "Zweimal",
+   "Unendlich oft"
+  ],
+  "erklaerung": "do-while prüft erst nach dem Durchlauf."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Ergebnis von 7 % 3?",
+  "richtig": "1",
+  "falsch": [
+   "2",
+   "2,33",
+   "0"
+  ],
+  "erklaerung": "Modulo = Rest der Division: 7 = 2 × 3 + 1."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Ergebnis von 7 / 2 bei int in Java?",
+  "richtig": "3",
+  "falsch": [
+   "3,5",
+   "4",
+   "2"
+  ],
+  "erklaerung": "Ganzzahldivision schneidet die Nachkommastellen ab."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Ergebnis von true && false?",
+  "richtig": "false",
+  "falsch": [
+   "true",
+   "null",
+   "Fehler"
+  ],
+  "erklaerung": "UND ist nur wahr, wenn beide Operanden wahr sind."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Welcher Datentyp passt für 3,14?",
+  "richtig": "double",
+  "falsch": [
+   "int",
+   "boolean",
+   "char"
+  ],
+  "erklaerung": "Gleitkommazahlen: float oder double."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "x = 2; 3-mal: x = x * 2. Wert von x?",
+  "richtig": "16",
+  "falsch": [
+   "8",
+   "6",
+   "32"
+  ],
+  "erklaerung": "2 → 4 → 8 → 16."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "summe = 0; für i = 1 bis 4: summe += i. Ergebnis?",
+  "richtig": "10",
+  "falsch": [
+   "4",
+   "6",
+   "15"
+  ],
+  "erklaerung": "1 + 2 + 3 + 4 = 10."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Array mit 10 Elementen: Index des letzten?",
+  "richtig": "9",
+  "falsch": [
+   "10",
+   "11",
+   "1"
+  ],
+  "erklaerung": "Indizes beginnen bei 0, also 0 bis 9."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Was macht ein Compiler?",
+  "richtig": "Übersetzt vor der Ausführung",
+  "falsch": [
+   "Führt Zeile für Zeile aus",
+   "Formatiert nur den Code",
+   "Sucht Viren"
+  ],
+  "erklaerung": "Compiler erzeugt vorab Maschinen-/Bytecode. Ein Interpreter führt direkt aus."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Welcher Operator weist in Java einen Wert zu?",
+  "richtig": "=",
+  "falsch": [
+   "==",
+   "!=",
+   "=>"
+  ],
+  "erklaerung": "= weist zu, == vergleicht."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Was bedeutet aktives Zuhören?",
+  "richtig": "Nachfragen und zusammenfassen",
+  "falsch": [
+   "Schnell unterbrechen",
+   "Nebenbei mailen",
+   "Nur nicken"
+  ],
+  "erklaerung": "Paraphrasieren und Rückfragen zeigen Verständnis und vermeiden Fehler."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Was gehört NICHT zum Vier-Seiten-Modell?",
+  "richtig": "Lautstärke",
+  "falsch": [
+   "Sachinhalt",
+   "Appell",
+   "Beziehung"
+  ],
+  "erklaerung": "Schulz von Thun: Sachinhalt, Selbstoffenbarung, Beziehung, Appell."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Wozu dient ein Ticketsystem?",
+  "richtig": "Anfragen erfassen und verfolgen",
+  "falsch": [
+   "Kinokarten verkaufen",
+   "Passwörter speichern",
+   "Viren scannen"
+  ],
+  "erklaerung": "Tickets dokumentieren, priorisieren und machen Bearbeitung nachvollziehbar."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Was ist ein Incident (ITIL)?",
+  "richtig": "Ungeplante Störung eines Services",
+  "falsch": [
+   "Geplante Wartung",
+   "Neue Funktion",
+   "Rechnung"
+  ],
+  "erklaerung": "Ziel des Incident Managements: Service schnell wiederherstellen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Aufgabe des First-Level-Supports?",
+  "richtig": "Erste Anlaufstelle",
+  "falsch": [
+   "Programmiert neue Software",
+   "Kauft Hardware ein",
+   "Schreibt Gesetze"
+  ],
+  "erklaerung": "Nimmt Anfragen an, löst Standardprobleme, eskaliert sonst an 2nd Level."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Empfohlener Abstand Auge–Monitor?",
+  "richtig": "50–80 cm",
+  "falsch": [
+   "10–20 cm",
+   "20–30 cm",
+   "120–150 cm"
+  ],
+  "erklaerung": "Ergonomie am Bildschirmarbeitsplatz: etwa eine Armlänge."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Wie entfernt man doppelte Zeilen im Ergebnis?",
+  "richtig": "SELECT DISTINCT",
+  "falsch": [
+   "SELECT UNIQUE KEY",
+   "DELETE DUPLICATE",
+   "GROUP ALL"
+  ],
+  "erklaerung": "DISTINCT liefert jede Ergebniszeile nur einmal."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Womit filtert man Gruppen nach einer Aggregation?",
+  "richtig": "HAVING",
+  "falsch": [
+   "WHERE",
+   "ORDER BY",
+   "LIMIT"
+  ],
+  "erklaerung": "WHERE filtert Zeilen vor GROUP BY, HAVING filtert Gruppen danach."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Wie zählt man alle Zeilen einer Tabelle?",
+  "richtig": "COUNT(*)",
+  "falsch": [
+   "SUM(*)",
+   "TOTAL()",
+   "LENGTH(*)"
+  ],
+  "erklaerung": "SELECT COUNT(*) FROM tabelle;"
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Wie sortiert man absteigend?",
+  "richtig": "ORDER BY spalte DESC",
+  "falsch": [
+   "ORDER BY spalte ASC",
+   "SORT DOWN spalte",
+   "GROUP BY spalte DESC"
+  ],
+  "erklaerung": "ASC = aufsteigend (Standard), DESC = absteigend."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Was entfernt alle Zeilen, aber nicht die Tabelle?",
+  "richtig": "DELETE FROM tabelle",
+  "falsch": [
+   "DROP TABLE tabelle",
+   "ALTER TABLE tabelle",
+   "REMOVE tabelle"
+  ],
+  "erklaerung": "DROP TABLE löscht die ganze Tabelle samt Struktur."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Was liefert ein INNER JOIN?",
+  "richtig": "Nur Zeilen mit Treffer in beiden",
+  "falsch": [
+   "Alle Zeilen der linken Tabelle",
+   "Alle Zeilen beider Tabellen",
+   "Nur Zeilen ohne Treffer"
+  ],
+  "erklaerung": "Nur Datensätze, bei denen die Join-Bedingung erfüllt ist."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Was liefert ein LEFT JOIN?",
+  "richtig": "Alle Zeilen der linken Tabelle",
+  "falsch": [
+   "Nur Treffer in beiden",
+   "Alle Zeilen der rechten Tabelle",
+   "Kartesisches Produkt"
+  ],
+  "erklaerung": "Fehlt rechts ein Treffer, werden die rechten Spalten mit NULL gefüllt."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Was ist ein Fremdschlüssel?",
+  "richtig": "Verweis auf Primärschlüssel",
+  "falsch": [
+   "Ein verschlüsseltes Feld",
+   "Ein doppelter Datensatz",
+   "Ein Index auf Text"
+  ],
+  "erklaerung": "Der Fremdschlüssel stellt die Beziehung zu einer anderen Tabelle her."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Was findet WHERE name LIKE 'M%'?",
+  "richtig": "Namen, die mit M beginnen",
+  "falsch": [
+   "Namen, die mit M enden",
+   "Namen mit genau einem M",
+   "Nur den Namen 'M%'"
+  ],
+  "erklaerung": "% steht für beliebig viele Zeichen, _ für genau eines."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Wie prüft man korrekt auf NULL?",
+  "richtig": "IS NULL",
+  "falsch": [
+   "= NULL",
+   "== NULL",
+   "EQUALS NULL"
+  ],
+  "erklaerung": "NULL ist kein Wert. Vergleiche mit = liefern UNKNOWN."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Welcher Befehl gehört zur DDL?",
+  "richtig": "CREATE TABLE",
+  "falsch": [
+   "SELECT",
+   "INSERT",
+   "UPDATE"
+  ],
+  "erklaerung": "DDL: CREATE, ALTER, DROP. DML: SELECT, INSERT, UPDATE, DELETE."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Zu welcher Kategorie gehört GRANT?",
+  "richtig": "DCL",
+  "falsch": [
+   "DML",
+   "DDL",
+   "TCL"
+  ],
+  "erklaerung": "Data Control Language: GRANT und REVOKE vergeben bzw. entziehen Rechte."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Welche Funktion berechnet den Durchschnitt?",
+  "richtig": "AVG()",
+  "falsch": [
+   "MEAN()",
+   "SUM()",
+   "MID()"
+  ],
+  "erklaerung": "Aggregatfunktionen: COUNT, SUM, AVG, MIN, MAX."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Bester Schutz gegen SQL-Injection?",
+  "richtig": "Prepared Statements",
+  "falsch": [
+   "Längere Tabellennamen",
+   "Mehr RAM",
+   "Base64-Kodierung"
+  ],
+  "erklaerung": "Parameter werden getrennt vom SQL übertragen und nie als Code interpretiert."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Datenbanken",
+  "frage": "Was fordert die 1. Normalform?",
+  "richtig": "Atomare Werte",
+  "falsch": [
+   "Keine transitiven Abhängigkeiten",
+   "Nur eine Tabelle",
+   "Keine Primärschlüssel"
+  ],
+  "erklaerung": "Jedes Feld enthält genau einen, nicht weiter zerlegbaren Wert."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Datenbanken",
+  "frage": "Was fordert zusätzlich die 2. Normalform?",
+  "richtig": "Keine partiellen Abhängigkeiten",
+  "falsch": [
+   "Keine transitiven Abhängigkeiten",
+   "Atomare Werte",
+   "Keine Fremdschlüssel"
+  ],
+  "erklaerung": "Nichtschlüsselattribute hängen vom gesamten (zusammengesetzten) Schlüssel ab."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Datenbanken",
+  "frage": "Was fordert zusätzlich die 3. Normalform?",
+  "richtig": "Keine transitiven Abhängigkeiten",
+  "falsch": [
+   "Keine partiellen Abhängigkeiten",
+   "Atomare Werte",
+   "Nur Zahlenwerte"
+  ],
+  "erklaerung": "Nichtschlüsselattribute hängen nicht von anderen Nichtschlüsselattributen ab."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Datenbanken",
+  "frage": "Wie setzt man eine m:n-Beziehung relational um?",
+  "richtig": "Zwischentabelle",
+  "falsch": [
+   "Ein Fremdschlüssel reicht",
+   "Spalten mit Listen",
+   "Gar nicht möglich"
+  ],
+  "erklaerung": "Zwischentabelle mit zwei Fremdschlüsseln, oft zusammen der Primärschlüssel."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Datenbanken",
+  "frage": "Wofür steht das A in ACID?",
+  "richtig": "Atomarität",
+  "falsch": [
+   "Authentifizierung",
+   "Aktualität",
+   "Abfrage"
+  ],
+  "erklaerung": "Atomicity: Transaktion ganz oder gar nicht. Dazu Consistency, Isolation, Durability."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was zeigt ein Use-Case-Diagramm?",
+  "richtig": "Akteure und Anwendungsfälle",
+  "falsch": [
+   "Klassen und Methoden",
+   "Zeitlichen Nachrichtenfluss",
+   "Datenbanktabellen"
+  ],
+  "erklaerung": "Wer (Akteur) kann was (Use Case) mit dem System tun?"
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was zeigt ein Sequenzdiagramm?",
+  "richtig": "Nachrichten in zeitlicher Folge",
+  "falsch": [
+   "Klassenstruktur",
+   "Zustände eines Objekts",
+   "Hardwareaufbau"
+  ],
+  "erklaerung": "Lebenslinien und Nachrichten zwischen Objekten von oben nach unten."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was bedeutet eine ausgefüllte Raute im Klassendiagramm?",
+  "richtig": "Komposition",
+  "falsch": [
+   "Aggregation",
+   "Vererbung",
+   "Abhängigkeit"
+  ],
+  "erklaerung": "Komposition: Teil existiert nicht ohne das Ganze. Leere Raute = Aggregation."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Wie wird Vererbung in UML dargestellt?",
+  "richtig": "Linie mit leerem Dreieck",
+  "falsch": [
+   "Linie mit Raute",
+   "Gestrichelter Pfeil",
+   "Doppelte Linie"
+  ],
+  "erklaerung": "Pfeil mit hohlem Dreieck zeigt von der Unterklasse zur Oberklasse."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was bedeutet - vor einem Attribut in UML?",
+  "richtig": "private",
+  "falsch": [
+   "public",
+   "protected",
+   "static"
+  ],
+  "erklaerung": "+ public, - private, # protected, ~ package."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was bedeutet # vor einem Attribut in UML?",
+  "richtig": "protected",
+  "falsch": [
+   "private",
+   "public",
+   "final"
+  ],
+  "erklaerung": "protected: sichtbar in der Klasse und ihren Unterklassen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was ist Kapselung?",
+  "richtig": "Daten verbergen, Zugriff per Methoden",
+  "falsch": [
+   "Klassen vererben",
+   "Code kopieren",
+   "Objekte löschen"
+  ],
+  "erklaerung": "Attribute private, Zugriff über Getter/Setter mit Prüfung."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was ist Polymorphie?",
+  "richtig": "Gleicher Aufruf, anderes Verhalten",
+  "falsch": [
+   "Mehrere Konstruktoren zwingend",
+   "Nur eine Klasse",
+   "Daten verbergen"
+  ],
+  "erklaerung": "z.B. tier.lautGeben() bellt beim Hund und miaut bei der Katze."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was gilt für eine abstrakte Klasse?",
+  "richtig": "Nicht instanziierbar",
+  "falsch": [
+   "Hat keine Methoden",
+   "Ist immer final",
+   "Hat keine Attribute"
+  ],
+  "erklaerung": "Nur konkrete Unterklassen können Objekte erzeugen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was ist Überladen (Overloading)?",
+  "richtig": "Gleicher Name, andere Parameter",
+  "falsch": [
+   "Unterklasse ersetzt Methode",
+   "Zu viele Objekte",
+   "Speicherüberlauf"
+  ],
+  "erklaerung": "z.B. add(int, int) und add(double, double) in derselben Klasse."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was ist Überschreiben (Overriding)?",
+  "richtig": "Unterklasse ersetzt Methode",
+  "falsch": [
+   "Gleicher Name, andere Parameter",
+   "Variable neu zuweisen",
+   "Datei überschreiben"
+  ],
+  "erklaerung": "Gleiche Signatur in der Unterklasse, z.B. mit @Override."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was gilt für ein static-Attribut?",
+  "richtig": "Gehört zur Klasse",
+  "falsch": [
+   "Gehört zu jedem Objekt einzeln",
+   "Ist unveränderlich",
+   "Ist immer private"
+  ],
+  "erklaerung": "Alle Objekte teilen sich ein static-Attribut."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was zeigt ein Zustandsdiagramm?",
+  "richtig": "Zustände und Übergänge",
+  "falsch": [
+   "Akteure",
+   "Datenbankschema",
+   "Netzwerkplan"
+  ],
+  "erklaerung": "z.B. Bestellung: offen → bezahlt → versendet."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was definiert ein Interface?",
+  "richtig": "Methoden ohne Implementierung",
+  "falsch": [
+   "Nur Attribute",
+   "Eine Datenbank",
+   "Eine Benutzeroberfläche"
+  ],
+  "erklaerung": "Ein Vertrag: Implementierende Klassen müssen die Methoden umsetzen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Entwurfsmuster",
+  "frage": "Welches Muster garantiert genau eine Instanz?",
+  "richtig": "Singleton",
+  "falsch": [
+   "Observer",
+   "Factory",
+   "Adapter"
+  ],
+  "erklaerung": "Privater Konstruktor + statische getInstance()-Methode."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Entwurfsmuster",
+  "frage": "Welches Muster benachrichtigt Abonnenten bei Änderungen?",
+  "richtig": "Observer",
+  "falsch": [
+   "Singleton",
+   "Strategy",
+   "Facade"
+  ],
+  "erklaerung": "Subjekt hält Liste von Beobachtern und ruft sie bei Änderungen auf."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Entwurfsmuster",
+  "frage": "Aufgabe des Controllers im MVC?",
+  "richtig": "Eingaben verarbeiten",
+  "falsch": [
+   "Daten dauerhaft speichern",
+   "Nur anzeigen",
+   "Netzwerk konfigurieren"
+  ],
+  "erklaerung": "Model = Daten/Logik, View = Anzeige, Controller = Steuerung."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Entwurfsmuster",
+  "frage": "Welches Muster passt inkompatible Schnittstellen an?",
+  "richtig": "Adapter",
+  "falsch": [
+   "Observer",
+   "Singleton",
+   "Builder"
+  ],
+  "erklaerung": "Wie ein Reisestecker: übersetzt eine Schnittstelle in eine andere."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Entwurfsmuster",
+  "frage": "Welches Muster macht Algorithmen austauschbar?",
+  "richtig": "Strategy",
+  "falsch": [
+   "Singleton",
+   "Adapter",
+   "Composite"
+  ],
+  "erklaerung": "Verschiedene Algorithmen hinter einer gemeinsamen Schnittstelle."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Entwurfsmuster",
+  "frage": "Welches Muster kapselt die Objekterzeugung?",
+  "richtig": "Factory",
+  "falsch": [
+   "Observer",
+   "Adapter",
+   "Proxy"
+  ],
+  "erklaerung": "Der Aufrufer muss die konkrete Klasse nicht kennen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Voraussetzung für binäre Suche?",
+  "richtig": "Sortierte Daten",
+  "falsch": [
+   "Nur Zahlen",
+   "Genau 2 Elemente",
+   "Eine Datenbank"
+  ],
+  "erklaerung": "Halbiert in jedem Schritt den Suchbereich, das geht nur sortiert."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Laufzeit der binären Suche?",
+  "richtig": "O(log n)",
+  "falsch": [
+   "O(n)",
+   "O(n²)",
+   "O(1)"
+  ],
+  "erklaerung": "1 Mio. Elemente → ca. 20 Vergleiche."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Laufzeit von Bubble Sort im Worst Case?",
+  "richtig": "O(n²)",
+  "falsch": [
+   "O(n)",
+   "O(log n)",
+   "O(n log n)"
+  ],
+  "erklaerung": "Zwei verschachtelte Schleifen über die Daten."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Welches Prinzip nutzt ein Stack?",
+  "richtig": "LIFO",
+  "falsch": [
+   "FIFO",
+   "Zufällig",
+   "Sortiert"
+  ],
+  "erklaerung": "Last In, First Out: push legt oben drauf, pop nimmt oben weg."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Welches Prinzip nutzt eine Queue?",
+  "richtig": "FIFO",
+  "falsch": [
+   "LIFO",
+   "Zufällig",
+   "Nach Priorität"
+  ],
+  "erklaerung": "First In, First Out, wie eine Warteschlange."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Was braucht jede Rekursion?",
+  "richtig": "Abbruchbedingung",
+  "falsch": [
+   "Eine Schleife",
+   "Globale Variablen",
+   "Ein Array"
+  ],
+  "erklaerung": "Ohne Abbruch: endlose Aufrufe und StackOverflow."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Was ergibt 5! (Fakultät)?",
+  "richtig": "120",
+  "falsch": [
+   "25",
+   "60",
+   "720"
+  ],
+  "erklaerung": "5 × 4 × 3 × 2 × 1 = 120."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Laufzeit der linearen Suche im Worst Case?",
+  "richtig": "O(n)",
+  "falsch": [
+   "O(1)",
+   "O(log n)",
+   "O(n²)"
+  ],
+  "erklaerung": "Im schlimmsten Fall wird jedes Element einmal geprüft."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Was ist ein Black-Box-Test?",
+  "richtig": "Test ohne Kenntnis des Codes",
+  "falsch": [
+   "Test mit Codeanalyse",
+   "Test im Dunkeln",
+   "Test nur der Hardware"
+  ],
+  "erklaerung": "Getestet wird nur gegen die Spezifikation: Eingabe → erwartete Ausgabe."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Was ist ein White-Box-Test?",
+  "richtig": "Test mit Kenntnis des Codes",
+  "falsch": [
+   "Test ohne Codekenntnis",
+   "Test der Oberfläche",
+   "Abnahme durch den Kunden"
+  ],
+  "erklaerung": "z.B. Anweisungs- (C0) oder Zweigüberdeckung (C1)."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Gültiges Alter 18–65. Beste Grenzwerte?",
+  "richtig": "17, 18, 65, 66",
+  "falsch": [
+   "0, 50, 100",
+   "18, 40, 65",
+   "20, 30, 60"
+  ],
+  "erklaerung": "Grenzwertanalyse: direkt an und neben jeder Grenze testen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Was ist eine Äquivalenzklasse?",
+  "richtig": "Eingaben mit gleichem Verhalten",
+  "falsch": [
+   "Gleich lange Variablen",
+   "Klassen gleicher Größe",
+   "Doppelte Testfälle"
+  ],
+  "erklaerung": "Pro Klasse reicht ein Repräsentant, z.B. gültig / zu klein / zu groß."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Wozu dient ein Regressionstest?",
+  "richtig": "Alte Funktionen nach Änderung prüfen",
+  "falsch": [
+   "Performance messen",
+   "Code formatieren",
+   "Kunden befragen"
+  ],
+  "erklaerung": "Stellt sicher, dass Änderungen nichts Bestehendes kaputt machen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Wer führt den Abnahmetest durch?",
+  "richtig": "Auftraggeber",
+  "falsch": [
+   "Nur der Entwickler",
+   "Der Compiler",
+   "Die Firewall"
+  ],
+  "erklaerung": "Der Kunde prüft, ob die Anforderungen erfüllt sind."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Was ist der erste Schritt bei TDD?",
+  "richtig": "Fehlschlagenden Test schreiben",
+  "falsch": [
+   "Code schreiben",
+   "Deployen",
+   "Dokumentation schreiben"
+  ],
+  "erklaerung": "Red → Green → Refactor."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Was fordert Zweigüberdeckung (C1)?",
+  "richtig": "Jeder Zweig mindestens einmal",
+  "falsch": [
+   "Jede Zeile genau zweimal",
+   "Nur der Hauptpfad",
+   "Alle Pfadkombinationen"
+  ],
+  "erklaerung": "Jedes if muss einmal true und einmal false durchlaufen werden."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Wer priorisiert das Product Backlog?",
+  "richtig": "Product Owner",
+  "falsch": [
+   "Scrum Master",
+   "Entwicklungsteam",
+   "Geschäftsführung"
+  ],
+  "erklaerung": "Der PO verantwortet den Produktwert und die Reihenfolge."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Typische Länge eines Sprints?",
+  "richtig": "1 bis 4 Wochen",
+  "falsch": [
+   "1 Tag",
+   "3 bis 6 Monate",
+   "1 Jahr"
+  ],
+  "erklaerung": "Feste Timebox. Häufig sind 2 Wochen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Maximale Dauer des Daily Scrum?",
+  "richtig": "15 Minuten",
+  "falsch": [
+   "5 Minuten",
+   "1 Stunde",
+   "Einen halben Tag"
+  ],
+  "erklaerung": "Kurze tägliche Abstimmung des Entwicklungsteams."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Hauptaufgabe des Scrum Masters?",
+  "richtig": "Hindernisse beseitigen",
+  "falsch": [
+   "Anforderungen priorisieren",
+   "Code reviewen",
+   "Gehälter festlegen"
+  ],
+  "erklaerung": "Coach für Scrum, schützt das Team und räumt Impediments aus dem Weg."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Nachteil des Wasserfallmodells?",
+  "richtig": "Späte Änderungen sind teuer",
+  "falsch": [
+   "Keine Dokumentation",
+   "Kein Plan",
+   "Zu viele Sprints"
+  ],
+  "erklaerung": "Phasen laufen streng nacheinander. Fehler zeigen sich oft erst spät."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Was steht im V-Modell jeder Entwicklungsphase gegenüber?",
+  "richtig": "Eine Testphase",
+  "falsch": [
+   "Ein Sprint",
+   "Ein Kunde",
+   "Ein Release"
+  ],
+  "erklaerung": "z.B. Anforderungen ↔ Abnahmetest, Modulentwurf ↔ Unit-Test."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Was bewirkt ein WIP-Limit bei Kanban?",
+  "richtig": "Begrenzt parallele Arbeit",
+  "falsch": [
+   "Begrenzt das Budget",
+   "Begrenzt Teamgröße",
+   "Begrenzt Projektdauer"
+  ],
+  "erklaerung": "Work in Progress: weniger gleichzeitig, schneller fertig."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Format einer User Story?",
+  "richtig": "Als … möchte ich …, um …",
+  "falsch": [
+   "Wenn … dann … sonst …",
+   "SELECT … FROM …",
+   "Gegeben … wenn … dann …"
+  ],
+  "erklaerung": "Rolle, Ziel und Nutzen aus Sicht des Anwenders."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Was ist ein VLAN?",
+  "richtig": "Logisches Netz auf einem Switch",
+  "falsch": [
+   "Ein sehr schnelles WLAN",
+   "Ein Virenscanner",
+   "Ein Kabeltyp"
+  ],
+  "erklaerung": "Trennt Netze logisch, ohne getrennte Hardware (IEEE 802.1Q)."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Präfix von IPv6-Link-Local-Adressen?",
+  "richtig": "fe80::/10",
+  "falsch": [
+   "2001::/16",
+   "::1/128",
+   "ff00::/8"
+  ],
+  "erklaerung": "::1 = Loopback, ff00::/8 = Multicast, 2000::/3 = global Unicast."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Was macht NAT?",
+  "richtig": "Übersetzt private in öffentliche IPs",
+  "falsch": [
+   "Vergibt MAC-Adressen",
+   "Verschlüsselt WLAN",
+   "Löst Namen auf"
+  ],
+  "erklaerung": "Viele interne Geräte teilen sich eine öffentliche IP-Adresse."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Was ist eine DMZ?",
+  "richtig": "Zone für öffentliche Server",
+  "falsch": [
+   "Ein Datenbankmodell",
+   "Ein Kabelstandard",
+   "Ein Backup-Typ"
+  ],
+  "erklaerung": "Puffer zwischen Internet und LAN, z.B. für Web- und Mailserver."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Wo läuft ein Typ-1-Hypervisor?",
+  "richtig": "Direkt auf der Hardware",
+  "falsch": [
+   "In einem Webbrowser",
+   "Auf einem Gast-OS",
+   "Nur in der Cloud"
+  ],
+  "erklaerung": "Bare Metal, z.B. ESXi oder Hyper-V Server. Typ 2 läuft auf einem Host-OS."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Was teilen sich Container im Gegensatz zu VMs?",
+  "richtig": "Den Kernel des Hosts",
+  "falsch": [
+   "Die Festplatte physisch",
+   "Den Bildschirm",
+   "Gar nichts"
+  ],
+  "erklaerung": "Container sind daher leichter und starten schneller als VMs."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Was ist SaaS?",
+  "richtig": "Software als Dienst",
+  "falsch": [
+   "Server als Hardware",
+   "Speicher als Kabel",
+   "Sicherheit als Standard"
+  ],
+  "erklaerung": "z.B. Webmail oder Office 365. IaaS = Infrastruktur, PaaS = Plattform."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Was stellt IaaS bereit?",
+  "richtig": "VMs, Speicher, Netz",
+  "falsch": [
+   "Fertige Office-Software",
+   "Nur eine Laufzeitumgebung",
+   "Schulungen"
+  ],
+  "erklaerung": "Infrastructure as a Service: Kunde verwaltet ab Betriebssystem selbst."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Welcher Git-Befehl lädt Commits ins Remote?",
+  "richtig": "git push",
+  "falsch": [
+   "git pull",
+   "git clone",
+   "git init"
+  ],
+  "erklaerung": "pull holt und merged, push sendet lokale Commits."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Welche HTTP-Methode legt per REST eine Ressource an?",
+  "richtig": "POST",
+  "falsch": [
+   "GET",
+   "DELETE",
+   "HEAD"
+  ],
+  "erklaerung": "GET lesen, POST anlegen, PUT/PATCH ändern, DELETE löschen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was bedeutet HTTP-Status 404?",
+  "richtig": "Nicht gefunden",
+  "falsch": [
+   "Serverfehler",
+   "Erfolgreich",
+   "Nicht autorisiert"
+  ],
+  "erklaerung": "200 OK, 201 Created, 401 Unauthorized, 404 Not Found, 500 Server Error."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was bedeutet HTTP-Status 500?",
+  "richtig": "Interner Serverfehler",
+  "falsch": [
+   "Nicht gefunden",
+   "Weiterleitung",
+   "Erstellt"
+  ],
+  "erklaerung": "5xx = Fehler auf dem Server, 4xx = Fehler in der Anfrage."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was ist JSON?",
+  "richtig": "Textformat mit Schlüssel-Wert",
+  "falsch": [
+   "Programmiersprache",
+   "Datenbanksystem",
+   "Bildformat"
+  ],
+  "erklaerung": "JavaScript Object Notation, z.B. {\"name\": \"Max\"}."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was ist XSS?",
+  "richtig": "Eingeschleuster Script-Code",
+  "falsch": [
+   "Ein CSS-Framework",
+   "Ein Dateisystem",
+   "Ein Hardwarefehler"
+  ],
+  "erklaerung": "Cross-Site Scripting. Schutz: Ausgaben kodieren, Eingaben validieren."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Wie speichert man Passwörter richtig?",
+  "richtig": "Hash mit Salt (z.B. bcrypt)",
+  "falsch": [
+   "Im Klartext",
+   "Base64-kodiert",
+   "MD5 ohne Salt"
+  ],
+  "erklaerung": "Langsame Hashfunktionen mit Salt erschweren Brute Force und Rainbow Tables."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was ist Base64?",
+  "richtig": "Kodierung, keine Verschlüsselung",
+  "falsch": [
+   "Sichere Verschlüsselung",
+   "Hashverfahren",
+   "Kompression"
+  ],
+  "erklaerung": "Jeder kann Base64 ohne Schlüssel zurückwandeln."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Welches Protokoll sichert HTTPS ab?",
+  "richtig": "TLS",
+  "falsch": [
+   "FTP",
+   "SMTP",
+   "UDP"
+  ],
+  "erklaerung": "Transport Layer Security, Nachfolger von SSL."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was bestätigt ein X.509-Zertifikat?",
+  "richtig": "Öffentlicher Schlüssel gehört zur Identität",
+  "falsch": [
+   "Das Passwort ist stark",
+   "Der Server ist schnell",
+   "Die Daten sind gesichert"
+  ],
+  "erklaerung": "Eine CA bestätigt per Signatur die Zuordnung Schlüssel ↔ Inhaber."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was ist das Least-Privilege-Prinzip?",
+  "richtig": "Nur minimal nötige Rechte",
+  "falsch": [
+   "Alle sind Admin",
+   "Keine Passwörter",
+   "Rechte nach Alter"
+  ],
+  "erklaerung": "Jeder Nutzer/Dienst bekommt nur die Rechte, die er wirklich braucht."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Wie lange dauert die Probezeit in der Ausbildung?",
+  "richtig": "1 bis 4 Monate",
+  "falsch": [
+   "2 Wochen",
+   "6 Monate",
+   "1 Jahr"
+  ],
+  "erklaerung": "§ 20 BBiG: mindestens 1, höchstens 4 Monate."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Wer vertritt Azubis im Betrieb?",
+  "richtig": "JAV",
+  "falsch": [
+   "IHK",
+   "Gewerkschaft",
+   "Arbeitsamt"
+  ],
+  "erklaerung": "Jugend- und Auszubildendenvertretung, zusammen mit dem Betriebsrat."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Ab wie vielen Arbeitnehmern kann ein Betriebsrat gewählt werden?",
+  "richtig": "5",
+  "falsch": [
+   "10",
+   "20",
+   "50"
+  ],
+  "erklaerung": "§ 1 BetrVG: mind. 5 ständige wahlberechtigte Arbeitnehmer."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Welche Versicherung zahlt allein der Arbeitgeber?",
+  "richtig": "Unfallversicherung",
+  "falsch": [
+   "Rentenversicherung",
+   "Krankenversicherung",
+   "Arbeitslosenversicherung"
+  ],
+  "erklaerung": "Gesetzliche Unfallversicherung über die Berufsgenossenschaft."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Wer schließt einen Tarifvertrag?",
+  "richtig": "Gewerkschaft und Arbeitgeber",
+  "falsch": [
+   "Betriebsrat und Chef",
+   "Staat und IHK",
+   "Azubi und Ausbilder"
+  ],
+  "erklaerung": "Tarifparteien: Gewerkschaften und Arbeitgeber(verbände)."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Regelmäßige werktägliche Höchstarbeitszeit (ArbZG)?",
+  "richtig": "8 Stunden",
+  "falsch": [
+   "6 Stunden",
+   "10 Stunden",
+   "12 Stunden"
+  ],
+  "erklaerung": "Bis 10 h möglich, wenn im Schnitt 8 h in 6 Monaten erreicht werden."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Was wird NICHT vom Bruttolohn abgezogen?",
+  "richtig": "Umsatzsteuer",
+  "falsch": [
+   "Lohnsteuer",
+   "Rentenversicherung",
+   "Krankenversicherung"
+  ],
+  "erklaerung": "Umsatzsteuer fällt beim Kauf an, nicht auf das Gehalt."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Kündigungsfrist für Azubis nach der Probezeit (Berufsaufgabe)?",
+  "richtig": "4 Wochen",
+  "falsch": [
+   "Fristlos",
+   "2 Wochen",
+   "3 Monate"
+  ],
+  "erklaerung": "§ 22 BBiG: Azubi kann mit 4 Wochen Frist kündigen, wenn er den Beruf aufgibt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Viele Anbieter, viele Nachfrager. Marktform?",
+  "richtig": "Polypol",
+  "falsch": [
+   "Monopol",
+   "Oligopol",
+   "Duopol"
+  ],
+  "erklaerung": "Beim Polypol hat kein Anbieter allein Marktmacht – es herrscht starker Wettbewerb."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Wenige große Anbieter, viele Nachfrager. Marktform?",
+  "richtig": "Angebotsoligopol",
+  "falsch": [
+   "Angebotsmonopol",
+   "Polypol",
+   "Nachfragemonopol"
+  ],
+  "erklaerung": "Wenige Anbieter beeinflussen sich gegenseitig, z. B. Mobilfunkanbieter."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was kennzeichnet einen Käufermarkt?",
+  "richtig": "Angebot größer als Nachfrage",
+  "falsch": [
+   "Nachfrage größer als Angebot",
+   "Nur ein Anbieter",
+   "Feste Staatspreise"
+  ],
+  "erklaerung": "Im Käufermarkt haben Kunden die Macht, Anbieter müssen um sie werben."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Jede Stelle hat genau einen Vorgesetzten. Organisationsform?",
+  "richtig": "Einliniensystem",
+  "falsch": [
+   "Mehrliniensystem",
+   "Matrixorganisation",
+   "Stabliniensystem"
+  ],
+  "erklaerung": "Klare Weisungswege, aber lange Dienstwege."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was ist eine Stabsstelle?",
+  "richtig": "Beratende Stelle ohne Weisungsrecht",
+  "falsch": [
+   "Abteilung mit Weisungsrecht",
+   "Ein Projektteam",
+   "Die Geschäftsführung"
+  ],
+  "erklaerung": "Stäbe (z. B. Datenschutz, Recht) beraten die Leitung, entscheiden aber nicht."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Nachteil der Matrixorganisation?",
+  "richtig": "Kompetenzkonflikte zwischen Leitungen",
+  "falsch": [
+   "Keine Spezialisierung",
+   "Sehr lange Dienstwege",
+   "Nur ein Vorgesetzter"
+  ],
+  "erklaerung": "Mitarbeitende haben zwei Vorgesetzte (Funktion + Produkt/Projekt)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was darf ein Prokurist NICHT?",
+  "richtig": "Grundstücke verkaufen",
+  "falsch": [
+   "Verträge unterschreiben",
+   "Mitarbeitende einstellen",
+   "Kredite aufnehmen"
+  ],
+  "erklaerung": "Prokura erlaubt fast alles – außer z. B. Grundstücksverkauf ohne Sondervollmacht und Bilanz unterschreiben."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Wo wird Prokura eingetragen?",
+  "richtig": "Im Handelsregister",
+  "falsch": [
+   "Im Grundbuch",
+   "Im Arbeitsvertrag",
+   "Beim Finanzamt"
+  ],
+  "erklaerung": "Prokura ist öffentlich und muss ins Handelsregister."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Vertrag über einen geschuldeten Erfolg (z. B. Webshop)?",
+  "richtig": "Werkvertrag",
+  "falsch": [
+   "Dienstvertrag",
+   "Mietvertrag",
+   "Leihvertrag"
+  ],
+  "erklaerung": "Beim Werkvertrag zählt das fertige Ergebnis, beim Dienstvertrag nur die Tätigkeit."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Vertrag über eine Tätigkeit ohne Erfolgsgarantie?",
+  "richtig": "Dienstvertrag",
+  "falsch": [
+   "Werkvertrag",
+   "Kaufvertrag",
+   "Leasingvertrag"
+  ],
+  "erklaerung": "Beispiel: IT-Beratung nach Stunden."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Kostenlose Überlassung einer Sache auf Zeit?",
+  "richtig": "Leihvertrag",
+  "falsch": [
+   "Mietvertrag",
+   "Pachtvertrag",
+   "Darlehensvertrag"
+  ],
+  "erklaerung": "Miete kostet Geld, Leihe ist unentgeltlich."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was regelt ein SLA typischerweise?",
+  "richtig": "Verfügbarkeit und Reaktionszeiten",
+  "falsch": [
+   "Gehälter der Mitarbeitenden",
+   "Die Firmenrechtsform",
+   "Die Steuerklasse"
+  ],
+  "erklaerung": "Service Level Agreements legen messbare Servicequalität fest."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "99,9 % Verfügbarkeit im Jahr erlauben ca. …",
+  "richtig": "8,8 Stunden Ausfall",
+  "falsch": [
+   "88 Stunden Ausfall",
+   "53 Minuten Ausfall",
+   "5 Minuten Ausfall"
+  ],
+  "erklaerung": "0,1 % von 8.760 h = 8,76 h."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Es wurde zu wenig geliefert. Mangelart?",
+  "richtig": "Mengenmangel",
+  "falsch": [
+   "Rechtsmangel",
+   "Mangel in der Art",
+   "Montagemangel"
+  ],
+  "erklaerung": "Zu wenig oder zu viel ist ein Mengenmangel (Quantitätsmangel)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Erstes Recht des Käufers bei Mängeln?",
+  "richtig": "Nacherfüllung",
+  "falsch": [
+   "Rücktritt",
+   "Minderung",
+   "Schadensersatz sofort"
+  ],
+  "erklaerung": "Vorrang hat die Nacherfüllung: Nachbesserung oder Ersatzlieferung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was ist Lieferungsverzug?",
+  "richtig": "Verkäufer liefert schuldhaft zu spät",
+  "falsch": [
+   "Käufer zahlt zu spät",
+   "Ware ist mangelhaft",
+   "Käufer nimmt nicht an"
+  ],
+  "erklaerung": "Zahlungsverzug betrifft den Käufer, Annahmeverzug ebenfalls."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Garantie vs. Gewährleistung: Was stimmt?",
+  "richtig": "Garantie ist freiwillig",
+  "falsch": [
+   "Gewährleistung ist freiwillig",
+   "Beides ist freiwillig",
+   "Garantie ist gesetzlich"
+  ],
+  "erklaerung": "Gewährleistung ist gesetzlich, Garantie ein freiwilliges Versprechen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Make-or-Buy fragt …",
+  "richtig": "Selbst erstellen oder einkaufen?",
+  "falsch": [
+   "Kaufen oder leasen?",
+   "Bar oder auf Rechnung?",
+   "Inland oder Ausland?"
+  ],
+  "erklaerung": "Entscheidung über Eigenfertigung oder Fremdbezug (z. B. Software)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Erster Schritt beim Angebotsvergleich?",
+  "richtig": "Bezugspreise berechnen",
+  "falsch": [
+   "Sofort das billigste nehmen",
+   "Lieferanten abmahnen",
+   "Skonto ignorieren"
+  ],
+  "erklaerung": "Listenpreis − Rabatt − Skonto + Bezugskosten = Bezugspreis."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Listenpreis 2.000 €, 15 % Rabatt. Zieleinkaufspreis?",
+  "richtig": "1.700 €",
+  "falsch": [
+   "1.850 €",
+   "1.985 €",
+   "1.500 €"
+  ],
+  "erklaerung": "2.000 € × 0,85 = 1.700 €."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was ist bei der Nutzwertanalyse NICHT nötig?",
+  "richtig": "Ein exakter Gewinn in Euro",
+  "falsch": [
+   "Kriterien",
+   "Gewichtung",
+   "Punktbewertung"
+  ],
+  "erklaerung": "Sie bewertet auch nicht-monetäre Kriterien über gewichtete Punkte."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Phasenmodell des Wandels nach Lewin?",
+  "richtig": "Auftauen – Verändern – Einfrieren",
+  "falsch": [
+   "Planen – Tun – Prüfen",
+   "Storming – Norming",
+   "Analyse – Design – Test"
+  ],
+  "erklaerung": "Kurt Lewin: unfreeze, change, refreeze."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Gute Maßnahme gegen Widerstände im Change?",
+  "richtig": "Betroffene früh beteiligen",
+  "falsch": [
+   "Änderungen geheim halten",
+   "Kritiker versetzen",
+   "Schulungen streichen"
+  ],
+  "erklaerung": "Transparenz und Beteiligung bauen Ängste ab."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was ist ein Multiplikator bei Schulungen?",
+  "richtig": "Geschulte Person, die Wissen weitergibt",
+  "falsch": [
+   "Ein Rechenfaktor",
+   "Ein E-Learning-Tool",
+   "Der Prüfer"
+  ],
+  "erklaerung": "Key-User schulen später ihre Kolleginnen und Kollegen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was ist Blended Learning?",
+  "richtig": "Mix aus Präsenz und E-Learning",
+  "falsch": [
+   "Nur Videos",
+   "Nur Präsenzunterricht",
+   "Lernen in Gruppen"
+  ],
+  "erklaerung": "Kombination verschiedener Lernformen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Ökologisches Unternehmensziel?",
+  "richtig": "CO₂-Ausstoß senken",
+  "falsch": [
+   "Gewinn maximieren",
+   "Marktanteil steigern",
+   "Löhne senken"
+  ],
+  "erklaerung": "Ökonomisch = Gewinn, sozial = Mitarbeitende, ökologisch = Umwelt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Umweltzeichen für energieeffiziente IT?",
+  "richtig": "Blauer Engel",
+  "falsch": [
+   "CE-Zeichen",
+   "GS-Zeichen",
+   "TÜV-Plakette"
+  ],
+  "erklaerung": "Auch Energy Star und TCO Certified sind bekannte IT-Labels."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Was bedeutet das CE-Zeichen?",
+  "richtig": "Hersteller erklärt EU-Konformität",
+  "falsch": [
+   "Geprüft vom TÜV",
+   "Besonders umweltfreundlich",
+   "Made in Europe"
+  ],
+  "erklaerung": "CE ist eine Herstellererklärung, kein Prüfsiegel."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Alte Festplatten mit Kundendaten entsorgen. Richtig?",
+  "richtig": "Zertifiziert vernichten lassen",
+  "falsch": [
+   "In den Hausmüll",
+   "Einfach formatieren",
+   "Verkaufen"
+  ],
+  "erklaerung": "DIN 66399 regelt Sicherheitsstufen der Datenträgervernichtung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Kaufpreis 1.190 € brutto, 2 % Skonto. Zahlbetrag?",
+  "richtig": "1.166,20 €",
+  "falsch": [
+   "1.190,00 €",
+   "1.142,40 €",
+   "1.000,00 €"
+  ],
+  "erklaerung": "1.190 € × 0,98 = 1.166,20 €."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Kosten 6.000 € fix, 20 € variabel/Stück, Preis 50 €. Break-even?",
+  "richtig": "200 Stück",
+  "falsch": [
+   "300 Stück",
+   "120 Stück",
+   "600 Stück"
+  ],
+  "erklaerung": "6.000 € / (50 € − 20 €) = 200 Stück."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was gehört zur ergonomischen Bildschirmarbeit?",
+  "richtig": "Oberkante Monitor auf Augenhöhe",
+  "falsch": [
+   "Monitor vor dem Fenster",
+   "Blick nach oben",
+   "Spiegelnder Bildschirm"
+  ],
+  "erklaerung": "Leichter Blick nach unten entlastet Nacken und Augen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Welche Vorschrift regelt Bildschirmarbeitsplätze?",
+  "richtig": "Arbeitsstättenverordnung",
+  "falsch": [
+   "Strafgesetzbuch",
+   "Handelsgesetzbuch",
+   "Telekommunikationsgesetz"
+  ],
+  "erklaerung": "Die ArbStättV enthält die Anforderungen an Bildschirmarbeit."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Welcher Standard regelt barrierefreie Webinhalte?",
+  "richtig": "WCAG",
+  "falsch": [
+   "ISO 9001",
+   "IEEE 802.3",
+   "ITIL"
+  ],
+  "erklaerung": "Web Content Accessibility Guidelines; in Deutschland umgesetzt durch die BITV."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Hilfsmittel für blinde Nutzer am PC?",
+  "richtig": "Screenreader mit Braillezeile",
+  "falsch": [
+   "Größerer Monitor",
+   "Ergonomische Maus",
+   "Headset"
+  ],
+  "erklaerung": "Screenreader lesen Inhalte vor, die Braillezeile zeigt Blindenschrift."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "USV-Typ mit dauerhafter Doppelwandlung?",
+  "richtig": "Online-USV (VFI)",
+  "falsch": [
+   "Offline-USV (VFD)",
+   "Line-Interactive (VI)",
+   "Hybrid-USV"
+  ],
+  "erklaerung": "VFI wandelt ständig um – keine Umschaltzeit, bester Schutz."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Einfachster und günstigster USV-Typ?",
+  "richtig": "Offline-USV (VFD)",
+  "falsch": [
+   "Online-USV (VFI)",
+   "Line-Interactive (VI)",
+   "Doppelwandler"
+  ],
+  "erklaerung": "Schaltet erst bei Ausfall auf Batterie um."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Verbraucher mit 600 W an 1.200-Wh-Akku. Laufzeit?",
+  "richtig": "2 Stunden",
+  "falsch": [
+   "0,5 Stunden",
+   "20 Minuten",
+   "12 Stunden"
+  ],
+  "erklaerung": "1.200 Wh / 600 W = 2 h (theoretisch, ohne Verluste)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Welche Schnittstelle überträgt Bild UND Ton digital?",
+  "richtig": "HDMI",
+  "falsch": [
+   "VGA",
+   "DVI-A",
+   "PS/2"
+  ],
+  "erklaerung": "VGA ist analog und nur Bild."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was kann USB-C mit Power Delivery?",
+  "richtig": "Laptop mit Strom versorgen",
+  "falsch": [
+   "Nur Daten übertragen",
+   "Nur Bild übertragen",
+   "Nur 5 Watt liefern"
+  ],
+  "erklaerung": "USB-PD liefert je nach Version bis zu 100 W bzw. 240 W."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was beschreiben die TCO eines Druckers?",
+  "richtig": "Gesamtkosten inkl. Toner und Wartung",
+  "falsch": [
+   "Nur den Kaufpreis",
+   "Nur die Stromkosten",
+   "Die Druckgeschwindigkeit"
+  ],
+  "erklaerung": "Folgekosten pro Seite übersteigen oft den Anschaffungspreis."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was ist ein Mehrkernprozessor?",
+  "richtig": "Mehrere Rechenkerne in einer CPU",
+  "falsch": [
+   "Mehrere CPUs im Rechenzentrum",
+   "Eine CPU mit viel RAM",
+   "Ein Grafikchip"
+  ],
+  "erklaerung": "Mehrere Kerne bearbeiten Threads parallel."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was beschleunigt ein SSD-Cache bzw. NVMe gegenüber HDD?",
+  "richtig": "Zugriffszeit",
+  "falsch": [
+   "Kapazität pro Euro",
+   "Lebensdauer bei Überschreiben",
+   "Kompatibilität"
+  ],
+  "erklaerung": "SSDs haben keine mechanischen Teile – Zugriff in Mikrosekunden."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Wofür steht ECC-RAM?",
+  "richtig": "Fehlerkorrigierender Speicher",
+  "falsch": [
+   "Extra schneller Speicher",
+   "Externer Speicher",
+   "Energiesparender Speicher"
+  ],
+  "erklaerung": "ECC erkennt und korrigiert Bitfehler – wichtig in Servern."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Monitor-Diagonale wird angegeben in …",
+  "richtig": "Zoll",
+  "falsch": [
+   "Pixeln",
+   "Hertz",
+   "dpi"
+  ],
+  "erklaerung": "1 Zoll = 2,54 cm."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was gibt die Bildwiederholrate an?",
+  "richtig": "Bilder pro Sekunde in Hz",
+  "falsch": [
+   "Pixel pro Zoll",
+   "Farbtiefe in Bit",
+   "Helligkeit in cd/m²"
+  ],
+  "erklaerung": "60 Hz = 60 Bilder pro Sekunde."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wie viele Schichten hat das OSI-Modell?",
+  "richtig": "7",
+  "falsch": [
+   "4",
+   "5",
+   "9"
+  ],
+  "erklaerung": "Physical, Data Link, Network, Transport, Session, Presentation, Application."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Auf welcher OSI-Schicht arbeiten TCP und UDP?",
+  "richtig": "Schicht 4 (Transport)",
+  "falsch": [
+   "Schicht 3 (Vermittlung)",
+   "Schicht 2 (Sicherung)",
+   "Schicht 7 (Anwendung)"
+  ],
+  "erklaerung": "Die Transportschicht sorgt für Ende-zu-Ende-Verbindungen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welche Aussage zu UDP stimmt?",
+  "richtig": "Verbindungslos, ohne Bestätigung",
+  "falsch": [
+   "Garantiert die Reihenfolge",
+   "Baut Verbindung per Handshake auf",
+   "Ist immer verschlüsselt"
+  ],
+  "erklaerung": "UDP ist schnell und schlank – z. B. für Streaming, DNS, VoIP."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wie kürzt man 2001:0db8:0000:0000:0000:0000:0000:0001?",
+  "richtig": "2001:db8::1",
+  "falsch": [
+   "2001:db8:1",
+   "2001::db8::1",
+   "2001:0db8::0001:0"
+  ],
+  "erklaerung": "Führende Nullen weg, eine Null-Gruppe-Folge durch :: ersetzen (nur einmal)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welche Präfixlänge ist für IPv6-Subnetze üblich?",
+  "richtig": "/64",
+  "falsch": [
+   "/24",
+   "/48",
+   "/128"
+  ],
+  "erklaerung": "Ein /64 ist das Standard-Subnetz; /128 ist eine einzelne Adresse."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welches IPv6-Verfahren ersetzt ARP?",
+  "richtig": "NDP (Neighbor Discovery)",
+  "falsch": [
+   "DHCPv6",
+   "ICMP-Echo",
+   "RARP"
+  ],
+  "erklaerung": "NDP nutzt ICMPv6-Nachrichten."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Subnetzmaske 255.255.255.192 entspricht …",
+  "richtig": "/26",
+  "falsch": [
+   "/25",
+   "/27",
+   "/28"
+  ],
+  "erklaerung": "192 = 11000000 → 24 + 2 = 26 Bit."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "192.168.10.0/24 in 4 gleiche Subnetze. Neue Maske?",
+  "richtig": "/26",
+  "falsch": [
+   "/25",
+   "/27",
+   "/28"
+  ],
+  "erklaerung": "4 Subnetze brauchen 2 zusätzliche Bit: /24 + 2 = /26."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Netzadresse von 172.16.5.77/28?",
+  "richtig": "172.16.5.64",
+  "falsch": [
+   "172.16.5.0",
+   "172.16.5.72",
+   "172.16.5.76"
+  ],
+  "erklaerung": "/28 = Blöcke à 16: 64–79 → Netz 64, Broadcast 79."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wie viele /27-Netze passen in ein /24?",
+  "richtig": "8",
+  "falsch": [
+   "4",
+   "16",
+   "32"
+  ],
+  "erklaerung": "3 zusätzliche Bit → 2³ = 8 Subnetze."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welches Gerät verbindet verschiedene IP-Netze?",
+  "richtig": "Router",
+  "falsch": [
+   "Switch",
+   "Hub",
+   "Repeater"
+  ],
+  "erklaerung": "Router arbeiten auf Schicht 3 und leiten anhand der IP weiter."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welches Gerät arbeitet nur auf Schicht 1?",
+  "richtig": "Hub/Repeater",
+  "falsch": [
+   "Switch",
+   "Router",
+   "Firewall"
+  ],
+  "erklaerung": "Ein Hub verteilt Signale an alle Ports ohne Adressauswertung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welcher Standard heißt Wi-Fi 6?",
+  "richtig": "IEEE 802.11ax",
+  "falsch": [
+   "IEEE 802.11ac",
+   "IEEE 802.11n",
+   "IEEE 802.3af"
+  ],
+  "erklaerung": "Wi-Fi 4 = n, Wi-Fi 5 = ac, Wi-Fi 6/6E = ax, Wi-Fi 7 = be."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welches Frequenzband kam mit Wi-Fi 6E dazu?",
+  "richtig": "6 GHz",
+  "falsch": [
+   "2,4 GHz",
+   "5 GHz",
+   "60 GHz"
+  ],
+  "erklaerung": "6 GHz bietet viele freie Kanäle mit wenig Störungen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welcher Standard taggt VLANs im Ethernet-Frame?",
+  "richtig": "IEEE 802.1Q",
+  "falsch": [
+   "IEEE 802.11i",
+   "IEEE 802.3ad",
+   "IEEE 802.1X"
+  ],
+  "erklaerung": "Der VLAN-Tag enthält die 12-Bit-VLAN-ID."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Wozu dient IEEE 802.1X?",
+  "richtig": "Portbasierte Netzwerk-Zugangskontrolle",
+  "falsch": [
+   "VLAN-Tagging",
+   "Strom über Ethernet",
+   "WLAN mit 6 GHz"
+  ],
+  "erklaerung": "Geräte müssen sich (z. B. via RADIUS) authentifizieren, bevor der Port freigeschaltet wird."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Zwei Standorte dauerhaft per VPN verbinden?",
+  "richtig": "Site-to-Site-VPN",
+  "falsch": [
+   "End-to-Site-VPN",
+   "Proxy",
+   "VLAN"
+  ],
+  "erklaerung": "End-to-Site (Client-to-Site) verbindet einzelne Geräte, z. B. im Homeoffice."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welches Protokoll wird oft für VPNs genutzt?",
+  "richtig": "IPsec",
+  "falsch": [
+   "FTP",
+   "SMTP",
+   "SNMP"
+  ],
+  "erklaerung": "Auch WireGuard und OpenVPN sind verbreitet."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Standardport von DNS?",
+  "richtig": "53",
+  "falsch": [
+   "25",
+   "110",
+   "3389"
+  ],
+  "erklaerung": "DNS nutzt Port 53 (UDP, bei großen Antworten TCP)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Standardport von RDP?",
+  "richtig": "3389",
+  "falsch": [
+   "22",
+   "443",
+   "8080"
+  ],
+  "erklaerung": "Remote Desktop Protocol von Microsoft."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welcher Befehl zeigt unter Windows die IP-Konfiguration?",
+  "richtig": "ipconfig /all",
+  "falsch": [
+   "ping -t",
+   "netstat -r",
+   "tracert"
+  ],
+  "erklaerung": "Unter Linux: ip a."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Was zeigt tracert/traceroute?",
+  "richtig": "Den Weg über alle Router (Hops)",
+  "falsch": [
+   "Offene Ports",
+   "Die MAC-Adresse",
+   "Die DNS-Server"
+  ],
+  "erklaerung": "Jeder Hop wird mit seiner Antwortzeit angezeigt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "1 GB über 100 Mbit/s übertragen. Ungefähre Dauer?",
+  "richtig": "80 Sekunden",
+  "falsch": [
+   "8 Sekunden",
+   "10 Sekunden",
+   "800 Sekunden"
+  ],
+  "erklaerung": "1 GB = 8.000 Mbit; 8.000 / 100 = 80 s."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Was bedeutet PoE+ (802.3at)?",
+  "richtig": "Bis ca. 30 W pro Port",
+  "falsch": [
+   "Bis ca. 15 W pro Port",
+   "Bis 100 W pro Port",
+   "Nur Daten, kein Strom"
+  ],
+  "erklaerung": "802.3af ≈ 15 W, 802.3at ≈ 30 W, 802.3bt bis 90 W."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Netzwerk",
+  "frage": "Welches Kabel ist gegen Störungen am besten geschützt?",
+  "richtig": "Lichtwellenleiter",
+  "falsch": [
+   "UTP Cat 5e",
+   "Koaxialkabel",
+   "Flachbandkabel"
+  ],
+  "erklaerung": "Glasfaser überträgt Licht und ist unempfindlich gegen elektromagnetische Störungen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was ist ein NAS?",
+  "richtig": "Netzwerkspeicher mit eigenem OS",
+  "falsch": [
+   "Speichernetz über Fibre Channel",
+   "Interne SSD",
+   "Ein Bandlaufwerk"
+  ],
+  "erklaerung": "NAS stellt Dateien per SMB/NFS im LAN bereit."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was ist ein SAN?",
+  "richtig": "Eigenes Speichernetz auf Blockebene",
+  "falsch": [
+   "Ein NAS mit WLAN",
+   "Ein USB-Stick",
+   "Ein Cloud-Ordner"
+  ],
+  "erklaerung": "Server sehen SAN-Speicher wie lokale Platten (z. B. iSCSI, Fibre Channel)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "RAID 10 mit 4 × 4 TB. Nutzbare Kapazität?",
+  "richtig": "8 TB",
+  "falsch": [
+   "16 TB",
+   "12 TB",
+   "4 TB"
+  ],
+  "erklaerung": "RAID 10 spiegelt: Hälfte der Gesamtkapazität."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "RAID 6 verkraftet den Ausfall von …",
+  "richtig": "2 Platten",
+  "falsch": [
+   "1 Platte",
+   "3 Platten",
+   "keiner Platte"
+  ],
+  "erklaerung": "RAID 6 hat zwei Paritätsinformationen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was ist ein Vollbackup?",
+  "richtig": "Sicherung aller Daten",
+  "falsch": [
+   "Nur geänderte Daten seit gestern",
+   "Nur Systemdateien",
+   "Nur neue Dateien"
+  ],
+  "erklaerung": "Am schnellsten wiederherzustellen, braucht aber am meisten Platz und Zeit."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Wiederherstellung: Was braucht man beim differenziellen Backup?",
+  "richtig": "Letztes Voll- + letztes Differenzbackup",
+  "falsch": [
+   "Nur das letzte Backup",
+   "Alle Inkrementalbackups",
+   "Nur das Vollbackup"
+  ],
+  "erklaerung": "Inkrementell: Vollbackup + alle Inkremente danach."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Wirtschaft",
+  "frage": "Wie lange müssen Rechnungen meist aufbewahrt werden?",
+  "richtig": "8 Jahre",
+  "falsch": [
+   "2 Jahre",
+   "6 Monate",
+   "30 Jahre"
+  ],
+  "erklaerung": "Seit 2025 gelten 8 Jahre für Buchungsbelege (vorher 10); Handelsbriefe 6 Jahre."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Hardware",
+  "frage": "Was bedeutet Cloud-Speicher mit Georedundanz?",
+  "richtig": "Kopien an entfernten Standorten",
+  "falsch": [
+   "Speicher nur in Deutschland",
+   "Verschlüsselter Speicher",
+   "Speicher auf dem Client"
+  ],
+  "erklaerung": "Schützt vor Katastrophen an einem Standort."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Wie viele Byte sind 1 MiB?",
+  "richtig": "1.048.576",
+  "falsch": [
+   "1.000.000",
+   "1.024.000",
+   "1.000.024"
+  ],
+  "erklaerung": "1 MiB = 2²⁰ Byte; 1 MB = 10⁶ Byte."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Festplatte mit 1 TB. Wie viel zeigt Windows ca. an?",
+  "richtig": "931 GiB",
+  "falsch": [
+   "1.000 GiB",
+   "1.024 GiB",
+   "900 GiB"
+  ],
+  "erklaerung": "10¹² Byte / 2³⁰ ≈ 931 GiB."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Dezimal 200 ist hexadezimal …",
+  "richtig": "C8",
+  "falsch": [
+   "C0",
+   "B8",
+   "D8"
+  ],
+  "erklaerung": "200 = 12 × 16 + 8 → C8."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Binär 1111 1111 ist dezimal …",
+  "richtig": "255",
+  "falsch": [
+   "256",
+   "127",
+   "511"
+  ],
+  "erklaerung": "8 Einsen = 2⁸ − 1."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "Wie viele Werte lassen sich mit 10 Bit darstellen?",
+  "richtig": "1.024",
+  "falsch": [
+   "1.000",
+   "512",
+   "2.048"
+  ],
+  "erklaerung": "2¹⁰ = 1.024."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Zahlensysteme",
+  "frage": "3 Minuten Audio, 44,1 kHz, 16 Bit, Stereo. Größe ca.?",
+  "richtig": "31,8 MB",
+  "falsch": [
+   "5,3 MB",
+   "3,2 MB",
+   "318 MB"
+  ],
+  "erklaerung": "44.100 × 2 Byte × 2 Kanäle × 180 s ≈ 31,75 MB."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Was ist ein Domain Controller?",
+  "richtig": "Server, der das Active Directory verwaltet",
+  "falsch": [
+   "Ein DNS-Router",
+   "Ein Mailserver",
+   "Ein Druckserver"
+  ],
+  "erklaerung": "Er authentifiziert Benutzer und Computer in der Domäne."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Wozu dienen Gruppenrichtlinien (GPOs)?",
+  "richtig": "Einstellungen zentral verteilen",
+  "falsch": [
+   "Benutzer löschen",
+   "Backups erstellen",
+   "IP-Adressen vergeben"
+  ],
+  "erklaerung": "Z. B. Passwortregeln oder Laufwerkszuordnungen für viele PCs gleichzeitig."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Was ist eine OU im Active Directory?",
+  "richtig": "Organisationseinheit zum Gruppieren",
+  "falsch": [
+   "Ein Benutzerkonto",
+   "Ein Servertyp",
+   "Ein Netzwerkprotokoll"
+  ],
+  "erklaerung": "OUs strukturieren Objekte, z. B. nach Abteilungen, und nehmen GPOs auf."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Welche NTFS-Berechtigung erlaubt Lesen, Ändern und Löschen?",
+  "richtig": "Ändern",
+  "falsch": [
+   "Lesen",
+   "Auflisten",
+   "Ausführen"
+  ],
+  "erklaerung": "Vollzugriff erlaubt zusätzlich, Berechtigungen zu ändern."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Freigabe „Lesen“, NTFS „Ändern“. Was gilt übers Netz?",
+  "richtig": "Lesen",
+  "falsch": [
+   "Ändern",
+   "Vollzugriff",
+   "Kein Zugriff"
+  ],
+  "erklaerung": "Über das Netzwerk gilt die restriktivere Berechtigung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Linux-Rechte 750. Was darf die Gruppe?",
+  "richtig": "Lesen und Ausführen",
+  "falsch": [
+   "Alles",
+   "Nur Lesen",
+   "Nichts"
+  ],
+  "erklaerung": "7 = rwx (Besitzer), 5 = r-x (Gruppe), 0 = --- (Andere)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Welcher Linux-Befehl ändert Dateirechte?",
+  "richtig": "chmod",
+  "falsch": [
+   "chown",
+   "ls -l",
+   "sudo"
+  ],
+  "erklaerung": "chown ändert den Besitzer."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Vorteil von Virtualisierung?",
+  "richtig": "Bessere Auslastung der Hardware",
+  "falsch": [
+   "Kein Hypervisor nötig",
+   "Keine Lizenzen nötig",
+   "Immer schneller als Hardware"
+  ],
+  "erklaerung": "Mehrere VMs teilen sich einen physischen Server."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Was ist ein Snapshot einer VM?",
+  "richtig": "Zustand zu einem Zeitpunkt",
+  "falsch": [
+   "Ein Vollbackup auf Band",
+   "Ein Screenshot",
+   "Eine Kopie des Hypervisors"
+  ],
+  "erklaerung": "Ersetzt kein Backup, liegt auf demselben Speicher."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Woraus startet man einen Docker-Container?",
+  "richtig": "Aus einem Image",
+  "falsch": [
+   "Aus einer ISO-Datei",
+   "Aus einem Snapshot",
+   "Aus dem BIOS"
+  ],
+  "erklaerung": "Das Image ist die Vorlage, der Container die laufende Instanz."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Cloud nur für eine Organisation?",
+  "richtig": "Private Cloud",
+  "falsch": [
+   "Public Cloud",
+   "Community Cloud",
+   "Edge Cloud"
+  ],
+  "erklaerung": "Hybrid Cloud kombiniert Private und Public."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Was ist PaaS?",
+  "richtig": "Plattform zum Entwickeln und Betreiben",
+  "falsch": [
+   "Fertige Software im Browser",
+   "Nur virtuelle Hardware",
+   "Ein Rechenzentrum zur Miete"
+  ],
+  "erklaerung": "Beispiel: Laufzeitumgebung inkl. Datenbank, ohne Serverpflege."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Was ist bei US-Cloudanbietern datenschutzrechtlich wichtig?",
+  "richtig": "Rechtsgrundlage für Drittlandtransfer",
+  "falsch": [
+   "Die Farbe des Logos",
+   "Nur der Preis",
+   "Die Anzahl der Server"
+  ],
+  "erklaerung": "Z. B. EU-US Data Privacy Framework oder Standardvertragsklauseln."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Betriebssysteme & Cloud",
+  "frage": "Wofür steht MDM?",
+  "richtig": "Mobile Device Management",
+  "falsch": [
+   "Multi Disk Mirror",
+   "Main Data Module",
+   "Mail Delivery Manager"
+  ],
+  "erklaerung": "Zentrale Verwaltung und Absicherung von Smartphones und Tablets."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Wie schnell muss eine Datenpanne gemeldet werden?",
+  "richtig": "Binnen 72 Stunden",
+  "falsch": [
+   "Binnen 24 Stunden",
+   "Binnen 2 Wochen",
+   "Gar nicht"
+  ],
+  "erklaerung": "Art. 33 DSGVO: Meldung an die Aufsichtsbehörde binnen 72 h."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Maximales DSGVO-Bußgeld?",
+  "richtig": "20 Mio. € oder 4 % des Jahresumsatzes",
+  "falsch": [
+   "50.000 €",
+   "1 Mio. €",
+   "1 % des Gewinns"
+  ],
+  "erklaerung": "Es gilt jeweils der höhere Betrag."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Was ist das „Recht auf Vergessenwerden“?",
+  "richtig": "Recht auf Löschung",
+  "falsch": [
+   "Recht auf Auskunft",
+   "Recht auf Berichtigung",
+   "Widerspruchsrecht"
+  ],
+  "erklaerung": "Art. 17 DSGVO."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Was sind TOM?",
+  "richtig": "Technische und organisatorische Maßnahmen",
+  "falsch": [
+   "Teile eines Mainboards",
+   "Tarifordnungsmodelle",
+   "Testobjekte"
+  ],
+  "erklaerung": "Z. B. Zutrittskontrolle, Verschlüsselung, Schulungen (Art. 32 DSGVO)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Welche Daten sind besonders schützenswert?",
+  "richtig": "Gesundheitsdaten",
+  "falsch": [
+   "Firmenadresse",
+   "Produktpreise",
+   "Öffnungszeiten"
+  ],
+  "erklaerung": "Art. 9 DSGVO: auch Religion, Biometrie, Gewerkschaftszugehörigkeit u. a."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Was ist Pseudonymisierung?",
+  "richtig": "Ersetzen von Namen durch Kennungen",
+  "falsch": [
+   "Vollständiges Löschen",
+   "Verschlüsseln mit AES",
+   "Daten veröffentlichen"
+  ],
+  "erklaerung": "Mit Zusatzwissen bleibt der Personenbezug herstellbar – anders als bei Anonymisierung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Rechtmäßige Grundlage für Newsletter-Versand?",
+  "richtig": "Einwilligung",
+  "falsch": [
+   "Berechtigtes Interesse am Umsatz",
+   "Keine nötig",
+   "Mündliche Absprache mit dem Chef"
+  ],
+  "erklaerung": "Double-Opt-in dokumentiert die Einwilligung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Was ist Privacy by Default?",
+  "richtig": "Datenschutzfreundliche Voreinstellungen",
+  "falsch": [
+   "Alles ist standardmäßig öffentlich",
+   "Datenschutz nur auf Anfrage",
+   "Kostenlose Software"
+  ],
+  "erklaerung": "Art. 25 DSGVO: Datenschutz durch Technik und Voreinstellungen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Datenschutz",
+  "frage": "Fernwartung beim Kunden. Was gehört dazu?",
+  "richtig": "Zustimmung und Protokollierung",
+  "falsch": [
+   "Heimlicher Zugriff",
+   "Passwort im Ticket speichern",
+   "Dauerhafter Zugang ohne Info"
+  ],
+  "erklaerung": "Der Kunde muss die Sitzung freigeben und nachvollziehen können."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Welches Schutzziel sichert die Echtheit des Absenders?",
+  "richtig": "Authentizität",
+  "falsch": [
+   "Verfügbarkeit",
+   "Vertraulichkeit",
+   "Integrität"
+  ],
+  "erklaerung": "Zusätzlich zu CIA oft genannt: Authentizität und Verbindlichkeit."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Ein Server fällt aus. Welches Schutzziel ist verletzt?",
+  "richtig": "Verfügbarkeit",
+  "falsch": [
+   "Vertraulichkeit",
+   "Integrität",
+   "Authentizität"
+  ],
+  "erklaerung": "Daten und Dienste sind nicht nutzbar."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Wie arbeitet TLS?",
+  "richtig": "Hybrid: asymmetrisch + symmetrisch",
+  "falsch": [
+   "Nur symmetrisch",
+   "Nur asymmetrisch",
+   "Ganz ohne Schlüssel"
+  ],
+  "erklaerung": "Asymmetrisch wird ein Sitzungsschlüssel ausgehandelt, dann schnell symmetrisch verschlüsselt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Welcher Hash gilt heute als unsicher?",
+  "richtig": "MD5",
+  "falsch": [
+   "SHA-256",
+   "SHA-3",
+   "SHA-512"
+  ],
+  "erklaerung": "MD5 und SHA-1 sind anfällig für Kollisionen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was macht ein Salt beim Passwort-Hash?",
+  "richtig": "Gleiche Passwörter ergeben andere Hashes",
+  "falsch": [
+   "Verschlüsselt den Hash",
+   "Macht das Passwort kürzer",
+   "Ersetzt das Passwort"
+  ],
+  "erklaerung": "Schützt vor Rainbow-Tables."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was ist Systemhärtung?",
+  "richtig": "Unnötige Dienste und Konten entfernen",
+  "falsch": [
+   "Mehr Arbeitsspeicher einbauen",
+   "Server in einen Tresor stellen",
+   "Übertakten"
+  ],
+  "erklaerung": "Weniger Angriffsfläche durch minimale Konfiguration und Updates."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Malware, die sich selbst über Netze verbreitet?",
+  "richtig": "Wurm",
+  "falsch": [
+   "Trojaner",
+   "Rootkit",
+   "Adware"
+  ],
+  "erklaerung": "Ein Wurm braucht keinen Wirt und kein Zutun des Nutzers."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Schadprogramm, getarnt als nützliche Software?",
+  "richtig": "Trojaner",
+  "falsch": [
+   "Wurm",
+   "Virus",
+   "Keylogger-Hardware"
+  ],
+  "erklaerung": "Er öffnet oft eine Hintertür (Backdoor)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Viele Rechner legen einen Server lahm. Angriff?",
+  "richtig": "DDoS",
+  "falsch": [
+   "Phishing",
+   "SQL-Injection",
+   "Brute Force"
+  ],
+  "erklaerung": "Distributed Denial of Service – oft aus einem Botnetz."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Angreifer schaltet sich zwischen zwei Partner?",
+  "richtig": "Man-in-the-Middle",
+  "falsch": [
+   "Spoofing des Monitors",
+   "Tailgating",
+   "Shoulder Surfing"
+  ],
+  "erklaerung": "Er kann Daten mitlesen oder verändern."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Jemand schlüpft hinter dir durch die Sicherheitstür?",
+  "richtig": "Tailgating",
+  "falsch": [
+   "Phishing",
+   "Vishing",
+   "Baiting"
+  ],
+  "erklaerung": "Social Engineering im physischen Bereich."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Präparierter USB-Stick liegt auf dem Parkplatz?",
+  "richtig": "Baiting",
+  "falsch": [
+   "Pharming",
+   "Spam",
+   "Defacement"
+  ],
+  "erklaerung": "Neugier wird ausgenutzt – Fundsticks nie anschließen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Welche Kombination ist echte 2FA?",
+  "richtig": "Passwort + App-Code",
+  "falsch": [
+   "Passwort + PIN",
+   "Zwei Passwörter",
+   "Benutzername + Passwort"
+  ],
+  "erklaerung": "Zwei verschiedene Faktoren: Wissen + Besitz (oder Biometrie)."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was ist ein Passkey?",
+  "richtig": "Anmeldung per Schlüsselpaar statt Passwort",
+  "falsch": [
+   "Ein langes Passwort",
+   "Ein USB-Kabel",
+   "Ein WLAN-Schlüssel"
+  ],
+  "erklaerung": "FIDO2/WebAuthn: phishing-resistent, der private Schlüssel bleibt auf dem Gerät."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Wichtigste Maßnahme gegen bekannte Sicherheitslücken?",
+  "richtig": "Updates zeitnah einspielen",
+  "falsch": [
+   "Bildschirmschoner",
+   "Größere Festplatte",
+   "Mehr Benutzerkonten"
+  ],
+  "erklaerung": "Patchmanagement schließt bekannte Schwachstellen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "IT-Sicherheit",
+  "frage": "Was ist ein IDS?",
+  "richtig": "System, das Angriffe erkennt",
+  "falsch": [
+   "System, das Strom sichert",
+   "Ein DNS-Server",
+   "Ein Speichertyp"
+  ],
+  "erklaerung": "Intrusion Detection System; ein IPS verhindert zusätzlich aktiv."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Was ist bei Scrum das Inkrement?",
+  "richtig": "Nutzbares Ergebnis eines Sprints",
+  "falsch": [
+   "Die Sprintdauer",
+   "Ein Meeting",
+   "Die Teamgröße"
+  ],
+  "erklaerung": "Am Ende jedes Sprints entsteht ein potenziell auslieferbares Produktinkrement."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Wer gehört NICHT fest zum Scrum-Team?",
+  "richtig": "Der Kunde",
+  "falsch": [
+   "Product Owner",
+   "Scrum Master",
+   "Developers"
+  ],
+  "erklaerung": "Der Kunde ist Stakeholder, z. B. im Sprint Review."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Was ist der Gesamtpuffer im Netzplan?",
+  "richtig": "Verschiebbare Zeit ohne Projektverzug",
+  "falsch": [
+   "Die Dauer des Projekts",
+   "Zeit bis zum ersten Meilenstein",
+   "Der Urlaub im Team"
+  ],
+  "erklaerung": "Vorgänge auf dem kritischen Pfad haben Puffer 0."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "FAZ 3, Dauer 4. FEZ?",
+  "richtig": "7",
+  "falsch": [
+   "12",
+   "1",
+   "4"
+  ],
+  "erklaerung": "Frühester Endzeitpunkt = FAZ + Dauer."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Erste Phase im klassischen Projekt?",
+  "richtig": "Projektdefinition/Initiierung",
+  "falsch": [
+   "Abnahme",
+   "Test",
+   "Rollout"
+  ],
+  "erklaerung": "Danach: Planung, Durchführung, Abschluss."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Was enthält ein Abnahmeprotokoll?",
+  "richtig": "Ergebnis der Abnahme und Mängel",
+  "falsch": [
+   "Gehälter des Teams",
+   "Den Quellcode",
+   "Nur die Rechnung"
+  ],
+  "erklaerung": "Mit Unterschrift beginnt meist die Gewährleistungsfrist."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Rollout-Strategie: Alle Standorte gleichzeitig?",
+  "richtig": "Big Bang",
+  "falsch": [
+   "Pilotbetrieb",
+   "Stufenweise Einführung",
+   "Parallelbetrieb"
+  ],
+  "erklaerung": "Schnell, aber riskant – keine Rückfallebene im Livebetrieb."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Alt- und Neusystem laufen eine Zeit gleichzeitig?",
+  "richtig": "Parallelbetrieb",
+  "falsch": [
+   "Big Bang",
+   "Direktumstellung",
+   "Abnahme"
+  ],
+  "erklaerung": "Sicher, aber doppelter Aufwand."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Projektmanagement",
+  "frage": "Was gehört in die Projektdokumentation für den Kunden?",
+  "richtig": "Benutzerhandbuch",
+  "falsch": [
+   "Private Chatverläufe",
+   "Gehaltsabrechnungen",
+   "Passwörter im Klartext"
+  ],
+  "erklaerung": "Dazu Abnahmeprotokoll, Systemdokumentation, Schulungsunterlagen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Was ist ein Problem im Sinne von ITIL?",
+  "richtig": "Ursache eines oder mehrerer Incidents",
+  "falsch": [
+   "Eine Störung beim Nutzer",
+   "Eine Serviceanfrage",
+   "Ein Change"
+  ],
+  "erklaerung": "Problem Management sucht die Grundursache, Incident Management stellt schnell wieder her."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Nutzer bittet um neue Software-Lizenz. Tickettyp?",
+  "richtig": "Service Request",
+  "falsch": [
+   "Incident",
+   "Problem",
+   "Major Incident"
+  ],
+  "erklaerung": "Eine Standardanfrage, keine Störung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Wer löst komplexe Fehler oft mit dem Hersteller?",
+  "richtig": "Third-Level-Support",
+  "falsch": [
+   "First-Level-Support",
+   "Der Nutzer",
+   "Die Buchhaltung"
+  ],
+  "erklaerung": "1st: Annahme/einfache Lösung, 2nd: Fachspezialisten, 3rd: Hersteller/Entwicklung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Kunde ist verärgert. Beste Reaktion?",
+  "richtig": "Ruhig zuhören und zusammenfassen",
+  "falsch": [
+   "Sofort widersprechen",
+   "Auflegen",
+   "Fachbegriffe häufen"
+  ],
+  "erklaerung": "Aktives Zuhören und Ich-Botschaften deeskalieren."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Was beschreibt eine Known Error Database?",
+  "richtig": "Bekannte Fehler mit Workarounds",
+  "falsch": [
+   "Alle Mitarbeitenden",
+   "Die Hardware-Inventur",
+   "Passwörter"
+  ],
+  "erklaerung": "Hilft dem Service Desk, Incidents schneller zu lösen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Support",
+  "frage": "Was ist eine offene Frage?",
+  "richtig": "Wie äußert sich der Fehler genau?",
+  "falsch": [
+   "Ist der PC an?",
+   "Haben Sie neu gestartet?",
+   "Ist das Kabel drin?"
+  ],
+  "erklaerung": "Offene Fragen (W-Fragen) liefern mehr Informationen als Ja/Nein-Fragen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Welcher Datentyp speichert wahr/falsch?",
+  "richtig": "boolean",
+  "falsch": [
+   "char",
+   "int",
+   "float"
+  ],
+  "erklaerung": "bool/boolean kennt nur true und false."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Welcher Datentyp speichert ein einzelnes Zeichen?",
+  "richtig": "char",
+  "falsch": [
+   "string",
+   "boolean",
+   "double"
+  ],
+  "erklaerung": "Ein String ist eine Folge von Zeichen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Ergebnis von 10 > 5 || 3 > 8?",
+  "richtig": "true",
+  "falsch": [
+   "false",
+   "8",
+   "Fehler"
+  ],
+  "erklaerung": "|| (ODER) ist wahr, wenn mindestens eine Seite wahr ist."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Ergebnis von !(4 == 4)?",
+  "richtig": "false",
+  "falsch": [
+   "true",
+   "4",
+   "0 == 0"
+  ],
+  "erklaerung": "! negiert: 4 == 4 ist wahr, also ergibt die Negation falsch."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Was liefert eine Funktion mit return zurück?",
+  "richtig": "Einen Rückgabewert",
+  "falsch": [
+   "Einen Parameter",
+   "Eine Schleife",
+   "Einen Kommentar"
+  ],
+  "erklaerung": "Parameter gehen hinein, der Rückgabewert kommt heraus."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "i = 10; solange i > 0: i = i − 3. Durchläufe?",
+  "richtig": "4",
+  "falsch": [
+   "3",
+   "5",
+   "10"
+  ],
+  "erklaerung": "10 → 7 → 4 → 1 → −2: vier Durchläufe."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Wozu dient ein Breakpoint?",
+  "richtig": "Programm zum Debuggen anhalten",
+  "falsch": [
+   "Programm beschleunigen",
+   "Code kompilieren",
+   "Fehler automatisch beheben"
+  ],
+  "erklaerung": "Am Haltepunkt kann man Variablen prüfen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Was macht ein Interpreter?",
+  "richtig": "Führt Code Zeile für Zeile aus",
+  "falsch": [
+   "Erzeugt vorab eine EXE",
+   "Prüft nur Rechtschreibung",
+   "Verschlüsselt Code"
+  ],
+  "erklaerung": "Python ist ein typisches Beispiel."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Welche Schleife passt für eine feste Anzahl Wiederholungen?",
+  "richtig": "for-Schleife",
+  "falsch": [
+   "while mit Abbruch durch Nutzer",
+   "do-while",
+   "if-else"
+  ],
+  "erklaerung": "Zählschleife mit Startwert, Bedingung und Schrittweite."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Welcher Git-Befehl speichert Änderungen lokal ab?",
+  "richtig": "git commit",
+  "falsch": [
+   "git push",
+   "git clone",
+   "git pull"
+  ],
+  "erklaerung": "push überträgt Commits ins Remote-Repository."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Wozu dient ein Branch in Git?",
+  "richtig": "Parallele Entwicklung isoliert",
+  "falsch": [
+   "Code löschen",
+   "Server starten",
+   "Datenbank sichern"
+  ],
+  "erklaerung": "Feature-Branches werden später per Merge zusammengeführt."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Programmierung",
+  "frage": "Was testet ein Unit-Test?",
+  "richtig": "Eine einzelne Funktion/Komponente",
+  "falsch": [
+   "Das ganze System",
+   "Die Benutzerfreundlichkeit",
+   "Die Hardware"
+  ],
+  "erklaerung": "Integrationstests prüfen das Zusammenspiel mehrerer Komponenten."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Modellierung",
+  "frage": "Welches UML-Diagramm zeigt Abläufe mit Verzweigungen?",
+  "richtig": "Aktivitätsdiagramm",
+  "falsch": [
+   "Klassendiagramm",
+   "Use-Case-Diagramm",
+   "Komponentendiagramm"
+  ],
+  "erklaerung": "Mit Start-/Endknoten, Aktionen und Entscheidungen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Modellierung",
+  "frage": "Was verbindet in einer EPK Ereignisse und Funktionen?",
+  "richtig": "Kontrollfluss mit Konnektoren",
+  "falsch": [
+   "Vererbung",
+   "Fremdschlüssel",
+   "Pakete"
+  ],
+  "erklaerung": "Konnektoren: UND, ODER, XOR. Ereignisse und Funktionen wechseln sich ab."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Modellierung",
+  "frage": "Welcher EPK-Konnektor heißt „entweder oder“?",
+  "richtig": "XOR",
+  "falsch": [
+   "UND",
+   "ODER",
+   "NICHT"
+  ],
+  "erklaerung": "Nach einem Ereignis darf auf XOR keine Entscheidung folgen – Entscheidungen treffen Funktionen."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Modellierung",
+  "frage": "Wofür steht BPMN?",
+  "richtig": "Business Process Model and Notation",
+  "falsch": [
+   "Basic Program Memory Network",
+   "Binary Process Management Node",
+   "Backup Plan Management"
+  ],
+  "erklaerung": "Standard zur Darstellung von Geschäftsprozessen mit Pools und Lanes."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Modellierung",
+  "frage": "Ein Kunde hat viele Bestellungen. Kardinalität?",
+  "richtig": "1:n",
+  "falsch": [
+   "1:1",
+   "m:n",
+   "n:1 bei Kunden"
+  ],
+  "erklaerung": "Eine Bestellung gehört zu genau einem Kunden."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "Modellierung",
+  "frage": "Was ist ein Primärschlüssel?",
+  "richtig": "Eindeutige Kennung eines Datensatzes",
+  "falsch": [
+   "Verweis auf eine andere Tabelle",
+   "Ein Passwort",
+   "Ein Index für Sortierung"
+  ],
+  "erklaerung": "Er darf nicht leer und nicht doppelt sein."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "KI & Trends",
+  "frage": "Was ist maschinelles Lernen?",
+  "richtig": "Systeme lernen Muster aus Daten",
+  "falsch": [
+   "Programmieren ohne Computer",
+   "Roboter bauen",
+   "Daten löschen"
+  ],
+  "erklaerung": "Teilgebiet der KI; z. B. Klassifikation von Spam-Mails."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "KI & Trends",
+  "frage": "Was ist ein LLM?",
+  "richtig": "Großes Sprachmodell",
+  "falsch": [
+   "Lokales Leitungsmodul",
+   "Linux-Lizenzmodell",
+   "Ein Speichertyp"
+  ],
+  "erklaerung": "Large Language Models erzeugen Text, z. B. für Chatbots."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "KI & Trends",
+  "frage": "Risiko bei generativer KI?",
+  "richtig": "Halluzinationen (falsche Fakten)",
+  "falsch": [
+   "Zu wenig Strom",
+   "Zu kleine Monitore",
+   "Keine Tastatur"
+  ],
+  "erklaerung": "Ergebnisse immer prüfen – und keine vertraulichen Daten eingeben."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "KI & Trends",
+  "frage": "Welche EU-Verordnung regelt KI nach Risikoklassen?",
+  "richtig": "AI Act",
+  "falsch": [
+   "DSGVO",
+   "NIS2",
+   "eIDAS"
+  ],
+  "erklaerung": "Verbietet z. B. Social Scoring und stellt Pflichten für Hochrisiko-KI auf."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "KI & Trends",
+  "frage": "Was ist das Internet of Things (IoT)?",
+  "richtig": "Vernetzte Alltagsgeräte",
+  "falsch": [
+   "Ein neues Betriebssystem",
+   "Ein Glasfaserstandard",
+   "Eine Programmiersprache"
+  ],
+  "erklaerung": "Z. B. smarte Thermostate oder Sensoren in der Fertigung."
+ },
+ {
+  "pruefung": "AP1",
+  "thema": "KI & Trends",
+  "frage": "Was ist Green IT?",
+  "richtig": "Ressourcenschonender IT-Einsatz",
+  "falsch": [
+   "IT nur im Freien",
+   "Grüne Monitore",
+   "Kostenlose Software"
+  ],
+  "erklaerung": "Z. B. effiziente Netzteile, Virtualisierung, lange Nutzung der Geräte."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Welcher Befehl ändert vorhandene Datensätze?",
+  "richtig": "UPDATE",
+  "falsch": [
+   "ALTER",
+   "INSERT",
+   "MODIFY ROW"
+  ],
+  "erklaerung": "ALTER TABLE ändert die Struktur, UPDATE die Daten."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Welche Klausel gruppiert Zeilen für Aggregatfunktionen?",
+  "richtig": "GROUP BY",
+  "falsch": [
+   "ORDER BY",
+   "HAVING",
+   "DISTINCT"
+  ],
+  "erklaerung": "HAVING filtert danach die Gruppen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Was liefert SELECT COUNT(DISTINCT ort) FROM kunde?",
+  "richtig": "Anzahl verschiedener Orte",
+  "falsch": [
+   "Alle Orte",
+   "Anzahl aller Kunden",
+   "Den häufigsten Ort"
+  ],
+  "erklaerung": "DISTINCT innerhalb von COUNT zählt jeden Wert nur einmal."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Was macht ein Index in einer Datenbank?",
+  "richtig": "Beschleunigt Suchen",
+  "falsch": [
+   "Verschlüsselt Spalten",
+   "Löscht Duplikate",
+   "Sichert die Tabelle"
+  ],
+  "erklaerung": "Kostet dafür Speicher und verlangsamt Schreibzugriffe etwas."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Was bewirkt ROLLBACK?",
+  "richtig": "Macht eine Transaktion rückgängig",
+  "falsch": [
+   "Speichert dauerhaft",
+   "Löscht die Tabelle",
+   "Startet den Server neu"
+  ],
+  "erklaerung": "COMMIT bestätigt die Transaktion."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Welche Unterabfrage prüft, ob Zeilen existieren?",
+  "richtig": "EXISTS",
+  "falsch": [
+   "LIKE",
+   "BETWEEN",
+   "UNION"
+  ],
+  "erklaerung": "WHERE EXISTS (SELECT …) ist wahr, sobald mindestens eine Zeile kommt."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "SQL",
+  "frage": "Was kombiniert UNION?",
+  "richtig": "Ergebnismengen zweier SELECTs",
+  "falsch": [
+   "Zwei Tabellen per Schlüssel",
+   "Spalten zu einer",
+   "Zwei Datenbanken"
+  ],
+  "erklaerung": "UNION entfernt Duplikate, UNION ALL nicht."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Datenbanken",
+  "frage": "Was ist eine NoSQL-Datenbank?",
+  "richtig": "Nicht-relationaler Datenspeicher",
+  "falsch": [
+   "Datenbank ohne Daten",
+   "Ein SQL-Dialekt",
+   "Eine Tabellenkalkulation"
+  ],
+  "erklaerung": "Z. B. Dokument- (MongoDB) oder Key-Value-Datenbanken (Redis)."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Datenbanken",
+  "frage": "Was bedeutet Isolation (ACID)?",
+  "richtig": "Transaktionen stören sich nicht",
+  "falsch": [
+   "Daten sind verschlüsselt",
+   "Server stehen getrennt",
+   "Backups sind offline"
+  ],
+  "erklaerung": "Parallele Transaktionen verhalten sich, als liefen sie nacheinander."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Datenbanken",
+  "frage": "Was ist eine Anomalie in nicht normalisierten Tabellen?",
+  "richtig": "Inkonsistenz durch Redundanz",
+  "falsch": [
+   "Ein Hardwaredefekt",
+   "Ein Virus",
+   "Ein langsamer Index"
+  ],
+  "erklaerung": "Einfüge-, Änderungs- und Löschanomalien."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Datenbanken",
+  "frage": "Was ist referenzielle Integrität?",
+  "richtig": "Fremdschlüssel zeigen auf echte Datensätze",
+  "falsch": [
+   "Alle Felder sind gefüllt",
+   "Daten sind sortiert",
+   "Tabellen sind verschlüsselt"
+  ],
+  "erklaerung": "Ein Löschen des Kunden mit Bestellungen wird z. B. verhindert oder kaskadiert."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Durchschnittliche Laufzeit von Quicksort?",
+  "richtig": "O(n log n)",
+  "falsch": [
+   "O(n²)",
+   "O(n)",
+   "O(log n)"
+  ],
+  "erklaerung": "Im Worst Case (schlechtes Pivot) O(n²)."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Welches Verfahren ist stabil und immer O(n log n)?",
+  "richtig": "Mergesort",
+  "falsch": [
+   "Quicksort",
+   "Selection Sort",
+   "Bubble Sort"
+  ],
+  "erklaerung": "Mergesort teilt rekursiv und führt sortiert zusammen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Welche Datenstruktur hat Schlüssel-Wert-Paare?",
+  "richtig": "Hashmap/Dictionary",
+  "falsch": [
+   "Stack",
+   "Queue",
+   "Array ohne Index"
+  ],
+  "erklaerung": "Zugriff über den Schlüssel im Mittel in O(1)."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Algorithmen",
+  "frage": "Binäre Suche in 1.024 sortierten Werten: max. Schritte?",
+  "richtig": "10",
+  "falsch": [
+   "1.024",
+   "512",
+   "32"
+  ],
+  "erklaerung": "log₂(1.024) = 10."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was bedeutet eine leere Raute im Klassendiagramm?",
+  "richtig": "Aggregation",
+  "falsch": [
+   "Komposition",
+   "Vererbung",
+   "Abhängigkeit"
+  ],
+  "erklaerung": "Teile können ohne das Ganze existieren; bei Komposition (gefüllt) nicht."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was ist ein Konstruktor?",
+  "richtig": "Methode zum Erzeugen eines Objekts",
+  "falsch": [
+   "Ein Datenbankfeld",
+   "Ein Testfall",
+   "Eine Schnittstelle"
+  ],
+  "erklaerung": "Er initialisiert die Attribute beim Anlegen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "UML & OOP",
+  "frage": "Was bedeutet Multiplizität 0..* ?",
+  "richtig": "Beliebig viele, auch keine",
+  "falsch": [
+   "Genau eins",
+   "Mindestens eins",
+   "Höchstens eins"
+  ],
+  "erklaerung": "1..* bedeutet mindestens eins."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Entwurfsmuster",
+  "frage": "Welches Muster erweitert Objekte dynamisch um Funktionen?",
+  "richtig": "Decorator",
+  "falsch": [
+   "Singleton",
+   "Factory",
+   "Adapter"
+  ],
+  "erklaerung": "Decorator umhüllt ein Objekt und ergänzt Verhalten."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Entwurfsmuster",
+  "frage": "Welches Muster bietet eine einfache Schnittstelle zu einem Subsystem?",
+  "richtig": "Facade",
+  "falsch": [
+   "Observer",
+   "Strategy",
+   "Proxy"
+  ],
+  "erklaerung": "Die Fassade versteckt komplexe Abläufe."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Entwurfsmuster",
+  "frage": "Welches Muster kontrolliert den Zugriff über ein Stellvertreterobjekt?",
+  "richtig": "Proxy",
+  "falsch": [
+   "Facade",
+   "Decorator",
+   "Builder"
+  ],
+  "erklaerung": "Z. B. für Lazy Loading oder Zugriffsschutz."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Was ist ein Mock-Objekt?",
+  "richtig": "Simulierte Abhängigkeit im Test",
+  "falsch": [
+   "Ein echter Server",
+   "Ein Fehlerbericht",
+   "Ein UML-Element"
+  ],
+  "erklaerung": "Mocks ersetzen z. B. Datenbank oder API im Unit-Test."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Was prüft ein Lasttest?",
+  "richtig": "Verhalten unter hoher Nutzung",
+  "falsch": [
+   "Rechtschreibung",
+   "Nur die Oberfläche",
+   "Einzelne Funktionen"
+  ],
+  "erklaerung": "Stresstests gehen bewusst über die Grenze hinaus."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Testen",
+  "frage": "Was misst die Anweisungsüberdeckung (C0)?",
+  "richtig": "Jede Anweisung mind. einmal ausgeführt",
+  "falsch": [
+   "Jeder Zweig ausgeführt",
+   "Jeder Pfad ausgeführt",
+   "Jede Klasse getestet"
+  ],
+  "erklaerung": "C1 = Zweige, C2 = Pfade (oft unpraktikabel)."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Wann findet die Sprint Retrospective statt?",
+  "richtig": "Nach dem Sprint Review",
+  "falsch": [
+   "Vor dem Sprint Planning",
+   "Täglich",
+   "Nur bei Problemen"
+  ],
+  "erklaerung": "Das Team verbessert dort seine Zusammenarbeit."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Was schätzen Story Points?",
+  "richtig": "Relativen Aufwand/Komplexität",
+  "falsch": [
+   "Exakte Stunden",
+   "Kosten in Euro",
+   "Anzahl Bugs"
+  ],
+  "erklaerung": "Häufig mit Planning Poker und Fibonacci-Zahlen."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Agile & PM",
+  "frage": "Was ist die Definition of Done?",
+  "richtig": "Gemeinsame Kriterien für „fertig“",
+  "falsch": [
+   "Abgabetermin des Projekts",
+   "Liste aller Bugs",
+   "Vertrag mit dem Kunden"
+  ],
+  "erklaerung": "Sorgt für einheitliche Qualität jedes Inkrements."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Welcher DNS-Eintrag zeigt auf eine IPv6-Adresse?",
+  "richtig": "AAAA",
+  "falsch": [
+   "A",
+   "MX",
+   "CNAME"
+  ],
+  "erklaerung": "A = IPv4, MX = Mailserver, CNAME = Alias."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Welcher DNS-Eintrag nennt den Mailserver?",
+  "richtig": "MX",
+  "falsch": [
+   "PTR",
+   "TXT",
+   "NS"
+  ],
+  "erklaerung": "PTR wird für Reverse-Lookups genutzt."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Wozu dient SNMP?",
+  "richtig": "Überwachung von Netzwerkgeräten",
+  "falsch": [
+   "Mailversand",
+   "Zeitsynchronisation",
+   "Dateiübertragung"
+  ],
+  "erklaerung": "Monitoring-Systeme fragen Werte per SNMP ab."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Welches Protokoll synchronisiert die Uhrzeit?",
+  "richtig": "NTP",
+  "falsch": [
+   "SMTP",
+   "SNMP",
+   "LDAP"
+  ],
+  "erklaerung": "Wichtig z. B. für Kerberos und Logdateien."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Wozu dient LDAP?",
+  "richtig": "Zugriff auf Verzeichnisdienste",
+  "falsch": [
+   "Webseiten ausliefern",
+   "IP-Adressen vergeben",
+   "Dateien drucken"
+  ],
+  "erklaerung": "Active Directory ist per LDAP abfragbar."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Netzwerk & Systeme",
+  "frage": "Was ist Load Balancing?",
+  "richtig": "Last auf mehrere Server verteilen",
+  "falsch": [
+   "Strom sparen",
+   "Daten komprimieren",
+   "Ein Backup-Verfahren"
+  ],
+  "erklaerung": "Erhöht Verfügbarkeit und Leistung."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was bedeutet „REST ist zustandslos“?",
+  "richtig": "Jede Anfrage enthält alle nötigen Infos",
+  "falsch": [
+   "Server speichert Sitzungen",
+   "Keine Daten erlaubt",
+   "Nur GET erlaubt"
+  ],
+  "erklaerung": "Der Server merkt sich zwischen Anfragen keinen Client-Zustand."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Welcher HTTP-Status bedeutet „nicht angemeldet“?",
+  "richtig": "401",
+  "falsch": [
+   "200",
+   "301",
+   "503"
+  ],
+  "erklaerung": "403 = angemeldet, aber nicht berechtigt."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Welche HTTP-Methode ist idempotent und ersetzt eine Ressource?",
+  "richtig": "PUT",
+  "falsch": [
+   "POST",
+   "CONNECT",
+   "PATCH"
+  ],
+  "erklaerung": "Mehrfaches PUT führt zum gleichen Ergebnis."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was ist CSRF?",
+  "richtig": "Untergeschobene Anfrage im Nutzernamen",
+  "falsch": [
+   "Ein CSS-Framework",
+   "Ein Datenbanktyp",
+   "Ein Hashverfahren"
+  ],
+  "erklaerung": "Schutz z. B. durch CSRF-Tokens und SameSite-Cookies."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Welches Verfahren eignet sich zum Passwort-Hashen?",
+  "richtig": "bcrypt/Argon2",
+  "falsch": [
+   "Base64",
+   "MD5",
+   "ROT13"
+  ],
+  "erklaerung": "Langsame Hashes mit Salt erschweren Brute Force."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "Web & Entwicklung",
+  "frage": "Was ist CI/CD?",
+  "richtig": "Automatisches Bauen, Testen, Ausliefern",
+  "falsch": [
+   "Ein Designmuster",
+   "Ein Grafikformat",
+   "Ein Lizenzmodell"
+  ],
+  "erklaerung": "Continuous Integration / Continuous Delivery bzw. Deployment."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Wie lange dauert der Mutterschutz nach der Geburt i. d. R.?",
+  "richtig": "8 Wochen",
+  "falsch": [
+   "2 Wochen",
+   "6 Monate",
+   "1 Jahr"
+  ],
+  "erklaerung": "Vor der Geburt 6 Wochen, danach 8 Wochen (bei Früh-/Mehrlingsgeburten 12)."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Wie viele Urlaubstage gibt das BUrlG mindestens (6-Tage-Woche)?",
+  "richtig": "24 Werktage",
+  "falsch": [
+   "20 Werktage",
+   "30 Werktage",
+   "18 Werktage"
+  ],
+  "erklaerung": "Das entspricht 20 Arbeitstagen bei einer 5-Tage-Woche."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Wer ist Träger der Unfallversicherung für Betriebe?",
+  "richtig": "Berufsgenossenschaft",
+  "falsch": [
+   "Krankenkasse",
+   "Arbeitsagentur",
+   "Rentenversicherung"
+  ],
+  "erklaerung": "Sie kommt für Arbeits- und Wegeunfälle auf."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Was regelt das Jugendarbeitsschutzgesetz u. a.?",
+  "richtig": "Max. 8 Stunden Arbeit pro Tag",
+  "falsch": [
+   "Mindestlohn für alle",
+   "Kündigungsschutz für Chefs",
+   "Steuerklassen"
+  ],
+  "erklaerung": "Gilt für Beschäftigte unter 18 Jahren."
+ },
+ {
+  "pruefung": "AP2",
+  "thema": "WiSo",
+  "frage": "Was ist ein Streik?",
+  "richtig": "Gemeinsame Arbeitsniederlegung",
+  "falsch": [
+   "Kündigung durch den Chef",
+   "Ein Tarifvertrag",
+   "Eine Abmahnung"
+  ],
+  "erklaerung": "Rechtmäßig nur von Gewerkschaften im Tarifkonflikt organisiert."
+ }
+]

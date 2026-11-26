@@ -1,0 +1,83 @@
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.tgz
+
+build/
+out/
+
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-snapshots/
+
+*.log
+flutter-plugins
+
+# Files and directories created by running "flutter pub get"
+.packages
+# https://dart.dev/guides/libraries/private-files
+
+# Provides default project-widegitignore behavior.
+# To override individually, use .gitignore in the project root
+
+# Misc
+*.DS_Store
+*.swp
+*.swo
+*~
+.project
+.c9/
+*.launch
+.settings/
+workspace.xml
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Generated files
+gen/
+*.g.dart
+*.freezed.dart
+
+# Android studio
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Fuchsia specific
+.fuchsia/
+
+# Observability
+firebase-debug.log
+flutter_assets/
+
+# Localization
+lib/l10n/
+
+# Save games
+savegame.json
+settings.json
+# Lernspiel: lokale/erzeugte Dateien
+dist/
+deploy_web/
+node_modules/
+_backup_alte_version_2026-11-25/
+graphify-out/
+.idea/
+*.iml
+build-and-shortcut.ps1
+create_desktop_shortcut.ps1
+C:*/
+.netlify/

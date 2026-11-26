@@ -1,0 +1,19 @@
+[build]
+  publish = "build/web"
+  command = "echo 'Web-Version wird lokal mit flutter build web gebaut'"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Flutter-Web: alle Pfade auf die App leiten (außer API und Identity)
+[[redirects]]
+  from = "/download"
+  to = "https://github.com/karoll187871-crypto/fachinformatiker-lernspiel/releases/latest"
+  status = 302
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

@@ -1,0 +1,148 @@
+# Baut das Spiel für Windows, Linux, macOS und Android.
+# Ein Tag wie "v2.3.0" erzeugt automatisch ein GitHub-Release mit allen Downloads.
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FLUTTER_VERSION: '3.50.1'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter test
+
+  linux:
+    needs: test
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pakete
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev \
+            libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libfuse2 zip
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter build linux --release
+      - name: AppImage + tar.gz
+        run: |
+          set -e
+          APPDIR=AppDir
+          mkdir -p $APPDIR/usr/bin dist
+          cp -r build/linux/x64/release/bundle/. $APPDIR/usr/bin/
+          cp LICENSE $APPDIR/usr/bin/LICENSE.txt
+          cp NOTICE.md $APPDIR/usr/bin/NOTICE.md
+          git archive --format=zip -o $APPDIR/usr/bin/Quellcode.zip HEAD
+          printf '#!/bin/sh\nHERE="$(dirname "$(readlink -f "$0")")"\ncd "$HERE/usr/bin"\nexec "$HERE/usr/bin/fachinformatiker_lernspiel" "$@"\n' > $APPDIR/AppRun
+          chmod +x $APPDIR/AppRun
+          printf '[Desktop Entry]\nType=Application\nName=Fachinformatiker Lernspiel\nComment=AP1/AP2-Pruefungs-Runner\nExec=fachinformatiker_lernspiel\nIcon=fachinformatiker-lernspiel\nCategories=Education;Game;\nTerminal=false\n' > $APPDIR/fachinformatiker-lernspiel.desktop
+          cp web/icons/Icon-512.png $APPDIR/fachinformatiker-lernspiel.png
+          curl -fsSL -o appimagetool https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage
+          chmod +x appimagetool
+          ARCH=x86_64 ./appimagetool --appimage-extract-and-run $APPDIR dist/Fachinformatiker-Lernspiel-x86_64.AppImage
+          tar -C $APPDIR/usr -czf dist/Fachinformatiker-Lernspiel-linux-x64.tar.gz --transform 's,^bin,Fachinformatiker-Lernspiel,' bin
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux
+          path: dist/*
+
+  macos:
+    needs: test
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter build macos --release
+      - name: Zip
+        run: |
+          mkdir -p dist
+          ditto -c -k --sequesterRsrc --keepParent "build/macos/Build/Products/Release/Fachinformatiker Lernspiel.app" dist/Fachinformatiker-Lernspiel-macOS.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos
+          path: dist/*
+
+  android:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter build apk --release
+      - run: |
+          mkdir -p dist
+          cp build/app/outputs/flutter-apk/app-release.apk dist/Fachinformatiker-Lernspiel-Android.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android
+          path: dist/*
+
+  windows:
+    needs: test
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter build windows --release
+      - run: powershell -ExecutionPolicy Bypass -File tool\package.ps1 -SkipBuild
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: dist/Fachinformatiker-Lernspiel.exe
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [linux, macos, android, windows]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/*
+          body: |
+            **Downloads**
+            - Windows: `Fachinformatiker-Lernspiel.exe` (Doppelklick installiert das Spiel)
+            - Mac: `Fachinformatiker-Lernspiel-macOS.zip` entpacken, App mit Rechtsklick → Öffnen starten
+            - Linux: `…AppImage` ausführbar machen und starten (oder `.tar.gz`)
+            - Android: `…Android.apk` installieren (Installation aus unbekannten Quellen erlauben)
+            - Browser (PC und Handy): https://fachinformatiker-lernspiel.netlify.app
+
+            Jeder startet mit leerem Spielstand. Mit einem Konto (im Spiel oben rechts) läuft der Spielstand auf allen Geräten.
