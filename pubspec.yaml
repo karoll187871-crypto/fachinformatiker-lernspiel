@@ -1,7 +1,7 @@
 name: fachinformatiker_lernspiel
-description: 3D-PrÃ¼fungs-Runner fÃ¼r Fachinformatiker AP1/AP2
+description: 3D-PrÃƒÂ¼fungs-Runner fÃƒÂ¼r Fachinformatiker AP1/AP2
 publish_to: none
-version: 2.2.0+4
+version: 2.3.0+5
 
 environment:
   sdk: ">=3.0.0 <4.0.0"

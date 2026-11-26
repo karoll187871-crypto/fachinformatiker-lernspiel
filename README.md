@@ -2,9 +2,18 @@
 
 Lizenz: AGPL-3.0 (siehe `LICENSE` und `NOTICE.md`).
 
-3D-Endlos-Runner für Windows: Du rennst über die Gleise, weichst Zügen und
-Schranken aus und beantwortest Prüfungsfragen, indem du durch das Tor mit der
-richtigen Antwort läufst.
+**Spielen:**
+- **Browser (PC und Handy):** https://fachinformatiker-lernspiel.netlify.app (auf dem Handy: „Zum Startbildschirm hinzufügen“)
+- **Downloads** für Windows, Mac, Linux und Android: https://github.com/karoll187871-crypto/fachinformatiker-lernspiel/releases/latest
+
+Ein **Konto** (im Spiel oben rechts) speichert deinen Spielstand online. Mit derselben E-Mail spielst du auf jedem Gerät weiter.
+
+## Neu in Version 2.2
+
+- Web-Version und Hochkant-Layout fürs Handy (Wischen und Tippen)
+- Konto-System mit Cloud-Spielstand (Netlify Identity + Netlify Blobs, Funktion `netlify/functions/save.mts`)
+- Builds für Linux (AppImage), macOS, Android (APK) und Windows über GitHub Actions (`.github/workflows/build.yml`). Ein Tag `v*` erzeugt ein Release.
+- Zeitlupe bei Fragen, Abschlusstest, Himmel-Shop, YouTube in „Meine Musik“ (nur Windows)
 
 ## Neu in Version 2.1
 

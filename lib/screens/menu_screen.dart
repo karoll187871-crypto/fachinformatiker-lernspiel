@@ -481,6 +481,7 @@ class _MenuScreenState extends State<MenuScreen>
           label: Text('Lernstatistik zurücksetzen', style: TextStyle(fontSize: 13 * s)),
         ),
         SizedBox(height: 14 * s),
+        if (isDesktop)
         Wrap(
           crossAxisAlignment: WrapCrossAlignment.center,
           spacing: 4 * s,
@@ -656,7 +657,11 @@ class _MenuScreenState extends State<MenuScreen>
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(m.title, style: _t(26, s, w: FontWeight.w900)),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              alignment: Alignment.centerLeft,
+              child: Text(m.title, maxLines: 1, style: _t(26, s, w: FontWeight.w900)),
+            ),
             Text(m.subtitle, style: _t(12, s, c: Colors.white70, w: FontWeight.w500)),
             SizedBox(height: 6 * s),
             Text('$count Fragen', style: _t(12, s, c: m.color)),
